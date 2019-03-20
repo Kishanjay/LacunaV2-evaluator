@@ -30,6 +30,7 @@ function start() {
             destination: entryPath,
             force: true,
             label: framework.name,
+            console: true
          }
         try {
             instrumenter.run(options);

@@ -11,25 +11,66 @@ const enter = new KeyboardEvent("keypress", {
     cancelable: true
 });
 
-addTodo("item1");
-addTodo("item2");
-addTodo("item3");
-deleteTodo(0);
-addTodo("item4");
-addTodo("item5");
-deleteTodo(1);
-addTodo("item6");
-addTodo("item7");
-addTodo("item8");
-deleteTodo(0);
+const dblClick = new MouseEvent('dblclick', {
+    'view': window,
+    'bubbles': true,
+    'cancelable': true
+});
+
+var a = new KeyboardEvent('keydown', {'keyCode':65, 'which':65});
+
+
+// TAB 1
+addTodo("item1"); // add
+addTodo("item2"); // add  n+1
+deleteTodo(0); // delete 
+addTodo("item4"); // add +delete
+addTodo("item5"); // add +delete+1
+deleteTodo(1); // delete n+1
+markTodo(0); // add mark
+markTodo(1); // add mark n+1
+markTodo(0); // remove mark
+
+// TAB 2
+switchTab(1); // switch to active
+addTodo("item8"); // add item while active
+markTodo(2); // mark while active
+markTodo(2); // remove mark while active
+markTodo(0);
+
+// TAB 3
+switchTab(3); // switch to complete
+markTodo(0); // unmark
+markTodo(0); // unmark
+addTodo("item10");
+
+clearCompleted();
 switchTab(0);
+markAll();
+clearCompleted();
+
+// Others
+addTodo("alpha")
+addTodo("beta")
+addTodo("gamma")
+markAll();
+markAll();
 switchTab(1);
-switchTab(2);
+
+// Click
 switchTab(0);
-markTodo(1);
+doubleClick(0);
+send(a);
 
 
-
+function send(ev) {
+    document.dispatchEvent(ev);
+}
+function doubleClick(index) {
+    try {
+        document.querySelector(".todo-list").querySelectorAll("label")[index].dispatchEvent(dblClick);
+    } catch (error) { console.log(error); }
+}
 function clearCompleted() {
     try {
         document.querySelector("#clear-completed").click();

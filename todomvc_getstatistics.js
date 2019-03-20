@@ -23,5 +23,5 @@ function countFunctions(filePath) {
 
 countFunctions(filePath0);
 countFunctions(filePath1);
-countFunctions(filePath2);
-countFunctions(filePath3);
+// countFunctions(filePath2);
+// countFunctions(filePath3);
