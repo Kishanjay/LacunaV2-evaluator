@@ -16,7 +16,6 @@ process.chdir('./todomvc/tests');
 var frameworkPathLookup = require('./todomvc/tests/framework-path-lookup');
 var frameworks = frameworkPathLookup();
 
-const EXCLUDED_FRAMEWORKS = ["angular2"];
 const ALIVE_FILE = "_alive_functions.json";
 
 process.chdir(cwd);

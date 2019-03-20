@@ -29,8 +29,8 @@ function start() {
             source: path.join(entryPath, 'index.html'),
             destination: entryPath,
             force: true,
-            label: framework.name,
-            console: true
+             label: framework.name,
+            unique: true,
          }
         try {
             instrumenter.run(options);

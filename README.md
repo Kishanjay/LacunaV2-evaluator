@@ -22,6 +22,16 @@ _dead_functions_assumed_by_analysers.json
 be stored, we're only interested in the data
 
 # How to use
+Presetup:
+```
+// custom filter out un-supported implementations
+const EXCLUDED_FRAMEWORKS = ["angular2", "angularjs", "binding-scala", "atmajs", "backbone_marionette"];
+list = list.filter(function (framework) {
+    return EXCLUDED_FRAMEWORKS.indexOf(framework.name) === -1;
+});
+
+return list; // do not filter 
+```
 Step 1.
 Instrument all the todomvc JS functions using the todomvc_instrumenter.
 The instrumentation code was based on dynamic-deadfunction-detector.
@@ -58,4 +68,4 @@ have been executed.
 Step 5.
 Generate the statistics
 
-`npm todomvc_getstatistics`
+`node todomvc_getstatistics`

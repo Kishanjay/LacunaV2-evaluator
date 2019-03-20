@@ -1,6 +1,8 @@
 /**
  * A set of functions that will (hopefully) trigger all accessible functions of 
  * the todomvc 
+ * 
+ * Unfortunately, actually simulating keyboard input seems to be hard this way
  */
 console.log("Running testcases");
 
