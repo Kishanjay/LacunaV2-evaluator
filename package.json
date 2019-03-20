@@ -1,0 +1,16 @@
+{
+  "name": "lacuna-evaluator",
+  "version": "1.0.0",
+  "description": "This script will make it easy to run any kind of performance/statistics  related test of lacuna.",
+  "main": "todomvc_runner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kishan Nirghin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "puppeteer": "^1.13.0"
+  }
+}
