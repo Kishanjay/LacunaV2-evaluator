@@ -29,7 +29,7 @@ function start() {
             source: path.join(entryPath, 'index.html'),
             destination: entryPath,
             force: true,
-             label: framework.name,
+            label: framework.name,
             unique: true,
          }
         try {

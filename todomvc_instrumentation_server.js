@@ -1,22 +1,37 @@
+/**
+ * @author Kishan Nirghin
+ * @description A modified version of the instrumentation_server from the 
+ * dynamic-deadfunction-detector repository. The main difference is that this
+ * server is specifically designed to work with the todomvc -- meaning that
+ * it will automatically associate the incomming data with a framework and
+ * store the alive functions in its respective folder.
+ */
 'use strict';
+
+
+/**
+ * The goal of this program: store all alive functions
+ * ALIVE_FILE contains the relative file-path where it will be stored
+ */ 
+const ALIVE_FILE = "_alive_functions.json";
+
+/* The base path will be fetched from the framework path */
+var frameworkPathLookup = require('./todomvc/tests/framework-path-lookup');
+var frameworks = frameworkPathLookup();
+
 
 const express = require("express"),
     path = require("path"),
     fs = require("fs"),
     bodyParser = require("body-parser");
-
 const app = express()
 const port = 8004
 
-const ALIVE_FILE = "_alive_functions.json";
 
-
-// parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({
-    extended: true
+    extended: true // parse application/x-www-form-urlencoded
 }));
-// parse application/json
-app.use(bodyParser.json())
+app.use(bodyParser.json()) // parse application/json
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -58,8 +73,16 @@ function aliveFunctionHandler(functionData) {
     fs.writeFileSync(aliveFunctionsPath, JSON.stringify(aliveFunctions), 'utf8');
 }
 
-function buildPath(framework, file) {
-    return path.join("todomvc", "examples", framework, file);
+function buildPath(frameworkName, file) {
+    var framework = frameworks.find(fw => {
+        return fw.name == frameworkName;
+    });
+    if (!framework) {
+        console.log(`ERROR cannot find ${frameworkName} in frameworks`);
+        return path.join("todomvc", "examples", frameworkName, file);    
+    }
+
+    return path.join("todomvc", framework.path, file);
 }
 
 
