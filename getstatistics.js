@@ -61,7 +61,7 @@ frameworks.forEach((framework) => {
             var analyzerNumberOfFalseDeadFunctions = analyzerDeadFunctions.length - analyzerNumberOfTrueDeadFunctions;
             var analyzerNumberOfTrueAliveFunctions = numberOfAliveFunctions - analyzerNumberOfFalseDeadFunctions;
 
-            csvData += `${framework.name},${analyzer},${analyzerAllFunctions.length},${analyzerAliveFunctions.length},${analyzerDeadFunctions.length},${analyzerNumberOfTrueDeadFunctions}/${analyzerDeadFunctions.length}(P) ${analyzerNumberOfTrueDeadFunctions}/${numberOfDeadFunctions}(R),${analyzerNumberOfTrueAliveFunctions}/${numberOfAliveFunctions} (-${analyzerNumberOfTrueDeadFunctions})\n`;
+            csvData += `${framework.name},${analyzer},${analyzerAllFunctions.length},${analyzerAliveFunctions.length},${analyzerDeadFunctions.length},${analyzerNumberOfTrueDeadFunctions}/${analyzerDeadFunctions.length}(P) ${analyzerNumberOfTrueDeadFunctions}/${numberOfDeadFunctions}(R),${analyzerNumberOfTrueAliveFunctions}/${numberOfAliveFunctions} (-${analyzerNumberOfFalseDeadFunctions})\n`;
         } catch (e) { console.log(e); }
     });
 });
