@@ -1,6 +1,10 @@
 /**
+ * @author Kishan Nirghin
+ * @description
  * Script that will execute all todomvc projects and trigger all functions
- * Hosts its own server
+ * 
+ * For simplicity it will setup a quick server for both the test script as
+ * the todomvc folder
  */
 const puppeteer = require('puppeteer');
 
@@ -15,17 +19,15 @@ var cwd = process.cwd();
 process.chdir('./todomvc/tests');
 var frameworkPathLookup = require('./todomvc/tests/framework-path-lookup');
 var frameworks = frameworkPathLookup();
+process.chdir(cwd);
 
 const ALIVE_FILE = "_alive_functions.json";
 
-process.chdir(cwd);
-
+/* Run todomvc server, and also host the test cases */
 app.get("/todomvc_testcases.js", (req, res) => {
     res.sendFile(path.join(__dirname, "todomvc_testcases.js"));
 });
-
 app.use(express.static('todomvc'));
-
 var server = app.listen(port, () => { console.log("TodoMVC server running on port " + port) });
 
 

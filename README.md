@@ -51,7 +51,14 @@ todomvc_instrumenter.js
 `todomvc/tests/framework-path-lookup.js`
 ```
 // custom filter out un-supported implementations
-const EXCLUDED_FRAMEWORKS = ["angular2", "angularjs", "binding-scala", "atmajs", "backbone_marionette"];
+const EXCLUDED_FRAMEWORKS = [
+    "angular2",
+    "angularjs",
+    "binding-scala",
+    "atmajs",
+    "backbone_marionette",
+    "emberjs" // Lacuna runs out of heapMemory
+];
 list = list.filter(function (framework) {
     return EXCLUDED_FRAMEWORKS.indexOf(framework.name) === -1;
 });
@@ -148,3 +155,14 @@ This script heavily relies on:
 - dynamic-deadfunction-detector
 
 If any of these projects change, this repo should be updated accordingly
+
+## Issues
+- When running the lacuna_runner.js the script sometimes errors due to a 
+heap memory overload: JavaScript heap out of memory. Currently unsure what may
+cause this error. A work around is by running the lacuna_runner at max 10 
+frameworks at a time.
+- For some reason the express server used by the dynamic analyzer persists 
+beyond the life span of the analyzer. Causing the issue that it serves the 
+first static folder through the entire lacuna_runner script. 
+For now this is solved by programmatically removing all express routes before
+starting the server.
