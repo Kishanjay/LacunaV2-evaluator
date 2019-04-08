@@ -6,7 +6,7 @@ require("./prototype_extension");
 
 const path = require("path");
 const commandLineArgs = require("command-line-args");
-const lacuna = require("./../LacunaV2/lacuna_runner");
+const lacuna = require("../LacunaV2/lacuna_runner");
 
 /* Fix relative path issue */
 const cwd = process.cwd();

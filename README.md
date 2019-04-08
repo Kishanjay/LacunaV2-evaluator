@@ -1,63 +1,67 @@
 # Intro
-This script will make it easy to run any kind of performance/statistics 
-related test of lacuna.
+Script used to evaluate the performance of Lacuna on any project.
 
-Ultimately it will make all other stat-related lacuna tools unnecessary as 
-this will be a complete replacement package capable of anything statistics 
-and perfomance related.
+The main features are: 
+- Getting the ground truth values of the functions; e.g. wether they are truly
+dead or alive.
+- Running Lacuna with any (combination of) analyzer(s) on the project to get
+Lacuna's results.
+- Generate a full confusion matrix of the results. Thus see how well Lacuna 
+performed against the groundtruth values.
 
-# Functionality
-The supported functionality is:
-
-Extracting TodoMVC's used and unused functions (ground truth)
-Running Lacuna on TodoMVC
-Compare Lacuna's results with the ground truth
-Lacuna should be used to generate the
-_dead_functions_assumed_by_analysers.json
+The featured functionality is to evaluate Lacuna against the todomvc
+which is the same JS application written in many different frameworks.
 
 # How to use
-Generating all execution traces can be done in different ways. 
-The only real important thing we have to ensure is that all non-dead functions
-are actually executed. 
+## Intuition
+The first step is to acquire the ground truth values. For this an instrumenter
+is used which appends some logging information to every function. After which
+the application has to be ran extensively in order to ensure that every alive
+function is executed atleast once.
 
-Running all test-cases (assuming that they cover every aspect of the application)
-should be a perfect solution. The only down-side is that many test-cases do not
-trigger any un-executed function sofar. Therefore it takes considerably longer
-to do this.
+Generating all the execution traces can be done in multiple ways; the only real
+important factor here is to make sure that all non-dead functions are actually
+executed.
 
-Also another limiation is that some frameworks cause the instrumenter to get 
-overloaded. Alive functions are logged through an http request; handling 2000
-of them asynchronously appears to be too much for the application. 
-
-Another limiation is that it appears that some frameworks trigger an instrumentation
-loop, therefore we shrink the available set a bit more.
+The todomvc comes with a complete test-set in which they automatically go over
+and verify all supported functionality. We can conclude that this test set will 
+execute any relevant function for the application.
 
 ## Presetup
-Copy the dependent projects into this folder
+Some things that have to be done in order for the scripts to function properly:
+
+Copy the dependent projects into this folder 
+e.g. by exeucting the following commands:
 `git clone todomvc`
 `git clone dynamic-deadfunction-detector`
-The expected file structure should be something like this:
 
+The resulting file/folder structure should be something like this:
 ```
 dynamic-deadfunction-detector/
 todomvc/
 todomvc_runner.js
 todomvc_instrumenter.js
-..
-..
+.
+.
 ```
 
-
-`todomvc/tests/framework-path-lookup.js`
-```
+Modify the framework list present in this file: `todomvc/tests/framework-path-lookup.js`
+(we do this to exclude some unsupported frameworks)
+```js
 // custom filter out un-supported implementations
 const EXCLUDED_FRAMEWORKS = [
-    "angular2",
-    "angularjs",
-    "binding-scala",
-    "atmajs",
-    "backbone_marionette",
-    "emberjs" // Lacuna runs out of heapMemory
+    const EXCLUDED_FRAMEWORKS = [
+		"angular2",
+		"angularjs",
+		"binding-scala",
+		"atmajs",
+		"backbone_marionette",
+
+		"emberjs", "extjs_deftjs", "durandal", "foam", "humble", "js_of_ocaml", "jsblocks", "kendo", "knockback", "reagent", "scalajs-react", // Lacuna may run out of heapMemory
+		"react-backbone", // Heap out of memory (verified)
+		"webrx", // takes forever ? 
+		
+	];
 ];
 list = list.filter(function (framework) {
     return EXCLUDED_FRAMEWORKS.indexOf(framework.name) === -1;
@@ -66,97 +70,103 @@ list = list.filter(function (framework) {
 return list; // skip last filter 
 ```
 
-## 1. Generate execution traces with existing test cases (takes a long time)
 
-### Step 1.
+## Evaluation
+The evaluation can be roughly split up into 3 parts;
+first acquiring the groundtruth values, second acquiring Lacuna's results, 
+at last comparing the both of them to generate some statistics.
+
+### Groundtruth
+_Note: since generating the groundtruth values relies on instrumentation, 
+it will overwrite your application (BUT it will make a backup for ya)_
+
+#### Step 1.
 Instrument all the todomvc JS functions using the todomvc_instrumenter.
 The instrumentation code was based on dynamic-deadfunction-detector.
 
-`node todomvc_instrumenter.js`
-
 This will overwrite the ./examples/* folder with the instrumented source code.
 _Note: a backup of the original will be kept in ./examples.back_
 
+`node todomvc_instrumenter.js`
 
-### Step 2.
-Run the instrumentation server
+#### Step 2.
+Run the instrumentation server. (This will store all alive functions and 
+thus aquire the ground truth values).
 
 `node todomvc_instrumentation_server.js`
 
-This will store all alive functions and thus aquire the ground truth values
-
-### Step 3.
-Run todomvc server
+#### Step 3.
+Run todomvc server. Server that hosts the todomvc projects
+And run the testcases. This will generate all possible executions, thus ensure 
+all alive functions have been executed. 
+_Note: this may take a really long time_
 
 `gulp test-server`
-
-Server that hosts the todomvc projects
-
-### Step 4.
-Run the testcases
-
 `npm run test`
 
-This will generate all possible executions, thus ensure all alive functions
-have been executed.
+#### Step 4.
+Run Lacuna on the todomvc to extract it results for any combination of analyzers
+required. For now it uses a static, dynamic and hybrid solution.
 
+Also todomvc_lacuna assumes that the LacunaV2 project is present under the same
+parent as this folder. If this is not the case, please modify the file
+accordingly.
 
-### Step 5.
-Generate the statistics
+_Note: the reason why the Lacuna runner is split up into chunks is to prevent
+getting heapmemory errors which is a known issue_
 
-`node todomvc_getstatistics`
+`node todomvc_lacuna.js -o 0`
+`node todomvc_lacuna.js -o 10`
+`node todomvc_lacuna.js -o 20`
+`node todomvc_lacuna.js -o 30`
+`node todomvc_lacuna.js -o 40`
 
-
-## 2. Generate execution traces webdriver
-** Incomplete **
-
-### Step 1.
-Modify the `todomvc_instrumenter.js`
-
-Add option: `console: true`
-
-This will ensure that th instrumentation code will not make http-requests 
-Rather do (the more efficient) console logs instead
-
-### Step 2.
-Instrument the todomvc
-
-`node todomvc_instrumenter.js`
-
-This will overwrite the ./examples/* folder with the instrumented source code.
-_Note: a backup of the original will be kept in ./examples.back_
-
-### Step 3.
-Execute webdriver that will automatically interact with the webpage
-
-`node todomvc_runner.js`
-
-### Step 4.
-Generate the statistics
+#### Step 5.
+Once all dead/alive functions have been generated by both Lacuna and according
+to the instrumenters, we can compare them and calculate the confusion matrix
+and acquire some statistics.
 
 `node todomvc_getstatistics`
+
+#### Step 6.
+To compare the todomvc results with the results mentioned by Obbink and 
+generated by Lacuna(v1) use the `todomvc_obbinkCompare` script.
+
+#### EXTRA
+Since generating the execution traces with the testcases is so slow and does
+lots of unnecessary tests; one could also do the tests with a webdriver and 
+a customly written testset.
+
+To do this, follow the following steps:
+- modify `todomvc_instrumenter.js` before running. add the option: 
+`console: true` which will use console logs instead of http requests to store 
+alive functions.
+- Instead of steps 2 and 3 execute `todomvc_runner` which will inject
+todomvc_testcases.js into the page. And hopefully execute all alive functions.
 
 
 # Development
-
 ## Notes
 Since this is only an evaluation tool, we tend to not store the actual optimized
 versions of the code and try to use the expected results data-only.
 
-## TODO
-- Add the webdriver version to the 
-
 ## Dependencies
 This script heavily relies on:
 - todomvc
-
-- lacuna
-
+- Lacuna
 - dynamic-deadfunction-detector
 
 If any of these projects change, this repo should be updated accordingly
 
 ## Issues
+Here are some notes on some issues that had to be solved.
+
+- Running all testcases on every framework takes a long time.
+- Some testsets overload the instrumenter (the instrumenter works by sending
+HTTP requests to an instrumentation server); having 2000 of these HTTP 
+requests simulaniously appears to be too much for the application.
+- Some frameworks trigger instrumentation loops, currently unsure why. So we
+exclude them from evaluation.
 - When running the lacuna_runner.js the script sometimes errors due to a 
 heap memory overload: JavaScript heap out of memory. Currently unsure what may
 cause this error. A work around is by running the lacuna_runner at max 10 
