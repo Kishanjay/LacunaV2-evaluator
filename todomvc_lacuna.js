@@ -26,11 +26,13 @@ try {
      */
     let options = {
         offset: 0,
-        length: 10
+        length: 10,
+        simulate: false,
     };
     let argv = commandLineArgs([
         { name: 'offset', type: Number, alias: 'o' },
         { name: 'length', type: Number, alias: 'l' },
+        { name: 'simulate', type: Boolean, alias: 's' },
     ]);
     options.extend(argv);
 
@@ -46,6 +48,8 @@ try {
  */
 async function start(options) {
     var runOptions = generateRunOptions(options.offset, options.length);
+    if (options.simulate) { console.log(runOptions); process.exit(); }
+    
     for (var i = 0; i < runOptions.length; i++) {
         console.log(`\n\nLacuna_runner [${i}/${runOptions.length-1}] FROM [${options.offset}-${options.length}]`);
         await runLacuna(runOptions[i]); // remove await for async **shocker**

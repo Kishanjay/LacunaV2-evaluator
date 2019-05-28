@@ -9,8 +9,10 @@ Lacuna's results.
 - Generate a full confusion matrix of the results. Thus see how well Lacuna 
 performed against the groundtruth values.
 
-The featured functionality is to evaluate Lacuna against the todomvc
-which is the same JS application written in many different frameworks.
+To demonstrate the performance of Lacuna, this repo contains all code required
+to evaluate Lacuna on the todomvc project. This documentation further contains
+code to reproduce the results that can be found in statistics.csv
+
 
 # How to use
 ## Intuition
@@ -23,6 +25,7 @@ Generating all the execution traces can be done in multiple ways; the only real
 important factor here is to make sure that all non-dead functions are actually
 executed.
 
+# TODOMVC
 The todomvc comes with a complete test-set in which they automatically go over
 and verify all supported functionality. We can conclude that this test set will 
 execute any relevant function for the application.
@@ -33,7 +36,10 @@ Some things that have to be done in order for the scripts to function properly:
 Copy the dependent projects into this folder 
 e.g. by exeucting the following commands:
 `git clone todomvc`
+`npm --prefix ./todomvc install ./todomvc` 
+`npm --prefix ./todomvc/tests install ./todomvc/tests` 
 `git clone dynamic-deadfunction-detector`
+`npm --prefix ./dynamic-deadfunction-detector install ./dynamic-deadfunction-detector` 
 
 The resulting file/folder structure should be something like this:
 ```
@@ -51,16 +57,12 @@ Modify the framework list present in this file: `todomvc/tests/framework-path-lo
 // custom filter out un-supported implementations
 const EXCLUDED_FRAMEWORKS = [
     const EXCLUDED_FRAMEWORKS = [
-		"angular2",
-		"angularjs",
-		"binding-scala",
-		"atmajs",
-		"backbone_marionette",
-
-		"emberjs", "extjs_deftjs", "durandal", "foam", "humble", "js_of_ocaml", "jsblocks", "kendo", "knockback", "reagent", "scalajs-react", // Lacuna may run out of heapMemory
-		"react-backbone", // Heap out of memory (verified)
-		"webrx", // takes forever ? 
-		
+		"angular2", // Heap out of memory 
+		"binding-scala", // Heap out of memory
+		"emberjs", // Heap out of memory
+		"react-backbone", // Heap out of memory
+		"extjs_deftjs", // Heap out of memory
+		"reagent", // Heap out of memory
 	];
 ];
 list = list.filter(function (framework) {
@@ -95,12 +97,16 @@ thus aquire the ground truth values).
 
 `node todomvc_instrumentation_server.js`
 
+This will create the _all_functions.json and _alive_functions.json in the 
+/examples/<framework> directory.
+
 #### Step 3.
 Run todomvc server. Server that hosts the todomvc projects
 And run the testcases. This will generate all possible executions, thus ensure 
 all alive functions have been executed. 
 _Note: this may take a really long time_
 
+In the todomvc folder execute the following commands:
 `gulp test-server`
 `npm run test`
 
@@ -113,7 +119,8 @@ parent as this folder. If this is not the case, please modify the file
 accordingly.
 
 _Note: the reason why the Lacuna runner is split up into chunks is to prevent
-getting heapmemory errors which is a known issue_
+getting heapmemory errors which for some reason occcur when running the script
+for a long period of time_
 
 `node todomvc_lacuna.js -o 0`
 `node todomvc_lacuna.js -o 10`
@@ -152,9 +159,9 @@ versions of the code and try to use the expected results data-only.
 
 ## Dependencies
 This script heavily relies on:
-- todomvc
 - Lacuna
 - dynamic-deadfunction-detector
+- ( todomvc )
 
 If any of these projects change, this repo should be updated accordingly
 
