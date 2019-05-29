@@ -1,0 +1,3 @@
+[submodule "dynamic-deadfunction-detector"]
+	path = dynamic-deadfunction-detector
+	url = https://github.com/Kishanjay/dynamic-deadfunction-detector.git

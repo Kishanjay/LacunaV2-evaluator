@@ -1,6 +1,6 @@
 /**
  * @description
- * Runs lacuna on all todomvc applications for each [ANALYZERS]
+ * Runs lacuna on all todomvc applications for each analyzer combination
  */
 require("./prototype_extension");
 
@@ -18,12 +18,8 @@ process.chdir(cwd);
 /* The (combination of) analysers that lacuna will use on the todomvc */
 const ANALYZERS = ["static nativecalls", "dynamic", "static nativecalls dynamic"];
 
-/* Actual execution of the code */
 try {
-    /** 
-     * Options for the Lacuna runner. 
-     * Mostly to prevent the heap out of memory error
-     */
+    /* Running in chunks to prevent the heap out of memory error */
     let options = {
         offset: 0,
         length: 10,
@@ -32,7 +28,8 @@ try {
     let argv = commandLineArgs([
         { name: 'offset', type: Number, alias: 'o' },
         { name: 'length', type: Number, alias: 'l' },
-        { name: 'simulate', type: Boolean, alias: 's' },
+        /* Debug arg: only show what commands are getting executed */
+        { name: 'simulate', type: Boolean, alias: 's' }, 
     ]);
     options.extend(argv);
 
@@ -44,7 +41,7 @@ try {
 
 /**
  * Function to run lacuna synchronously 
- * is required for the dynamic analyzer to work.
+ *  (Required for dynamic analyzer to work)
  */
 async function start(options) {
     var runOptions = generateRunOptions(options.offset, options.length);
