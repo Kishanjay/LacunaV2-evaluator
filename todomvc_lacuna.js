@@ -1,16 +1,21 @@
 /**
  * @description
  * Runs lacuna on all todomvc applications for each analyzer combination
+ * 
+ * Assumes normalization
+ * thus ensure to run todomvc_lacuna_normalizer beforehand
  */
 require("./prototype_extension");
 
 const path = require("path");
+const fs = require("fs-extra");
 const commandLineArgs = require("command-line-args");
 const lacuna = require("../LacunaV2/lacuna_runner");
 
 
 const TODOMVC_DIR = "todomvc";
 const EXAMPLES_DIR = "examples.normalized";
+const EXAMPLES_OUTPUT_DIR = "examples.lacunized"; // different folder to keep things cleen
 
 const ANALYZERS = ["static", "nativecalls", "dynamic", "closure_compiler", "wala", "npm_cg", "tajs", "acg"];
 
@@ -30,26 +35,28 @@ async function start() {
     let frameworks = getFrameworks(options);
     assert(frameworks, "Invalid frameworks");
 
+    // createDestinationFolder();
+
     let analyserCombinations = generateAnalyserCombinations(ANALYZERS);
     assert(analyserCombinations, "Invalid analyserCombinations");
 
     let lacunaRunOptions = generateLacunaRunOptions(frameworks, analyserCombinations);
     assert(lacunaRunOptions, "Invalid lacunaRunOptions");
-
-    if (options.simulate) { console.log(lacunaRunOptions); process.exit(); }
     
-    /* Before running, normalize all frameworks according to Lacuna */
-    lacunaNormalizeFrameworks(frameworks);
-    return
+    if (options.simulate) { console.log(lacunaRunOptions); process.exit(); }
 
     for (let lacunaRunOption of lacunaRunOptions) {
-        
         let containsDynamic = lacunaRunOption.analyzer.includes("dynamic");
         
         if (options.skipDynamic && containsDynamic) continue;
         if (options.onlyDynamic && !containsDynamic) continue;
 
-        await runLacuna(lacunaRunOption); // remove await for async **shocker**
+        let containsClosureCompiler = lacunaRunOption.analyzer.includes("closure_compiler");
+        if (!containsClosureCompiler) continue;
+
+        try {
+            await runLacuna(lacunaRunOption); // remove await for async **shocker**
+        } catch (e) { console.log(e); }
         // NOTE: should wait for the dynamic analyser to function properly..
     }
 }
@@ -62,7 +69,7 @@ async function start() {
 function getRunOptions() {
     let defaultOptions = {
         offset: 0,
-        length: 10,
+        length: 1,
         simulate: false,
         skipDynamic: false,
         onlyDynamic: false
@@ -85,6 +92,7 @@ function getRunOptions() {
 
 /**
  * Fetches the todomvc- frameworks that will be used
+ * by default capped at 10.
  */
 function getFrameworks({ offset, length }) {
     const tests_dir = path.join(TODOMVC_DIR, "tests")
@@ -134,33 +142,33 @@ function generateLacunaRunOptions(frameworks, analyserCombinations) {
                 analyzer: analyserCombination.split(" "), // as an array,
                 logfile: logfile,
                 assumeNormalization: true, // should be normalized before starting
+                force: true,
             };
-            
+
+            /* Do some exceptions */
+            if (framework.name == 'angular-dart') {
+                lacunaRunOption.directory = lacunaRunOption.directory.slice(0, -4);
+                lacunaRunOption.entry = 'web/index.html';
+            }
+            if (framework.name == 'chaplin-brunch') {
+                lacunaRunOption.directory = lacunaRunOption.directory.slice(0, -7);
+                lacunaRunOption.entry = 'public/index.html';
+            }
+            if (framework.name == 'duel') {
+                lacunaRunOption.directory = lacunaRunOption.directory.slice(0, -4);
+                lacunaRunOption.entry = 'www/index.html';
+            }
+            if (framework.name == 'vanilladart') {
+                lacunaRunOption.directory = lacunaRunOption.directory.slice(0, -10);
+                lacunaRunOption.entry = 'build/web/index.html';
+            }
+
             lacunaRunOptions.push(lacunaRunOption);
         });
     });
     return lacunaRunOptions;
 }
 
-/**
- * Lacuna normalizes the frameworks 
- * - exports inline JS
- * - imports externally hosted JS
- * - exports eventAttributes to a file
- */
-function lacunaNormalizeFrameworks(frameworks) {
-    frameworks.forEach(framework => {
-        let directory = generateFrameworkDirectory(framework);
-        /* Create new object for every setup */
-        let normalizeRunOption = { 
-            directory: directory,
-            entry: "index.html",
-            normalizeOnly: true
-        };
-        
-        lacuna.run(normalizeRunOption);
-    });
-}
 /**
  * Lacuna promise required for synchronous execution
  */
@@ -175,9 +183,7 @@ function runLacuna(runOption) {
  * Fetches the directory for a framework
  */
 function generateFrameworkDirectory({path: frameworkPath}) {
-    frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_DIR); // append to examples
-    process.exit();
-    
+    frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_OUTPUT_DIR); // append to examples    
     let pwdFrameworkPath = path.join(TODOMVC_DIR, frameworkPath);
     return pwdFrameworkPath;
 }
@@ -188,6 +194,22 @@ function assert(assertion, msg) {
         console.log(msg);
         process.exit(1);
     }
+}
+
+
+/**
+ * Creates and clears the new examples folder where the lacunized results 
+ * will be stored
+ */
+function createDestinationFolder() {
+    examplesSource = path.join(TODOMVC_DIR, EXAMPLES_DIR);
+    examplesDestination = path.join(TODOMVC_DIR, EXAMPLES_OUTPUT_DIR);
+
+    if (fs.existsSync(examplesDestination) && fs.lstatSync(examplesDestination).isDirectory()) {
+        fs.removeSync(examplesDestination);
+    }
+
+    fs.copySync(examplesSource, examplesDestination);
 }
 
 

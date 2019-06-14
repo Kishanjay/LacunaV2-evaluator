@@ -1,0 +1,458 @@
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compiler.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compiler.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwala.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilerwala.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","npm_cg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalanpm_cg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilerwalanpm_cg.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","npm_cg","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalanpm_cgtajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/ampersand/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilerwalanpm_cgtajs.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","npm_cg","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalanpm_cgtajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/ampersand/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 2022
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilerwalanpm_cgtajsacg.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","npm_cg","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalanpm_cgacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 2022
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilerwalanpm_cgacg.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalatajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/ampersand/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilerwalatajs.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalatajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/ampersand/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 2022
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilerwalatajsacg.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalaacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 2022
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilerwalaacg.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","npm_cg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilernpm_cg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilernpm_cg.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","npm_cg","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilernpm_cgtajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 2726
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/ampersand/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true,
+  tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/ampersand/lacuna_staticnativecallsclosure_compilernpm_cgtajs.log
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/ampersand
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","npm_cg","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilernpm_cgtajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/ampersand"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [757] todomvc.bundle.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 2941
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 102
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }

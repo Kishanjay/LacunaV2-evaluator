@@ -27,7 +27,9 @@ function start() {
     assert(frameworks, "Invalid frameworks");
 
     createDestinationFolder(); // should work with EXAMPLES_OUTPUT_DIR after this
-    lacunaNormalizeFrameworks(frameworks);
+    lacunaNormalizeFrameworks(frameworks).then(() => {
+        console.log("Normalization finished");
+    });
 }
 
 /**
@@ -64,8 +66,8 @@ function createDestinationFolder() {
  * - imports externally hosted JS
  * - exports eventAttributes to a file
  */
-function lacunaNormalizeFrameworks(frameworks) {
-    frameworks.forEach(framework => {
+async function lacunaNormalizeFrameworks(frameworks) {
+    for (framework of frameworks){
         let directory = generateFrameworkDirectory(framework);
         /* Create new object for every setup */
         let normalizeRunOption = { 
@@ -74,9 +76,11 @@ function lacunaNormalizeFrameworks(frameworks) {
             normalizeOnly: true,
             force: true
         };
-    
-        lacuna.run(normalizeRunOption);
-    });
+
+        try {
+            await lacunaRunPromise(normalizeRunOption); // async doesn't seem to work
+        } catch (e) { console.log(e); }
+    }
 }
 
 /**
@@ -88,6 +92,13 @@ function generateFrameworkDirectory({path: frameworkPath}) {
     return pwdFrameworkPath;
 }
 
+
+function lacunaRunPromise (lacunaRunOption) {
+    return new Promise((resolve, reject) => {
+        try { lacuna.run(lacunaRunOption, resolve); } 
+        catch (e) { reject(); }
+    })
+}
 
 function assert(assertion, msg) {
     if (!assertion) {
