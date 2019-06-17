@@ -1,69 +1,76 @@
 /**
  * @author Kishan Nirghin
  * 
- * @description Generates the statistics.csv file
- * Combines the output of Lacuna with that of the instrumenter to say something
- * about the performance of each analyzer.
+ * @version 2
  * 
- * It fetches the lacuna output from the examples.back directory by default.
- * Also exports precision_recall.data and fscore.data which can be used 
- * to create various plots in R
+ * @description Generates the statistics for every todomvc project
+ * creates the files in the statistics folder. Which will contain specific 
+ * statistics about each framework individually. 
+ * 
+ * Generates the statistics.csv file which contains the average performance
+ * of each analyser combination
  */
 require("./prototype_extension");
 
 const fs = require("fs");
 const path = require("path");
 
-/* Fix relative path issue */
+const TODOMVC_DIR = "todomvc";
+const EXAMPLES_DIR = "examples";
+const STATISTICS_FOLDER = "statistics";
+
+/**
+ * Use the same frameworks that have been tested
+ */
 var cwd = process.cwd();
 process.chdir('./todomvc/tests');
 var frameworkPathLookup = require('./todomvc/tests/framework-path-lookup');
 var frameworks = frameworkPathLookup();
 process.chdir(cwd);
 
-const STATISTICS_FILE = "statistics.csv";
-
 /* The analyzers that have been used by Lacuna */
-const ANALYZERS = ["static nativecalls", "dynamic", "static nativecalls dynamic"];
-
-/* make the analyzers more human friendly */
-var AnalyzerMap = {
-    "static nativecalls": "static",
-    "dynamic": "dynamic",
-    "static nativecalls dynamic": "hybrid"
-};
+const ANALYZERS = ["static", "nativecalls", "dynamic", "closure_compiler", "wala", "npm_cg", "tajs", "acg"];
+let analyserCombinations = generateAnalyserCombinations(ANALYZERS);
 
 /* Filenames should be inline with the instrumenter and instrumentation_server */
 const ALIVE_FUNCTIONS_FILE = "_alive_functions.json";
 const ALL_FUNCTIONS_FILE = "_all_functions.json";
 
-/* Since we're looping over all data, lets also compute these things */
-var stats = {
-    static: { precisions: [], recalls: [], fscores: [] },
-    dynamic: { precisions: [], recalls: [], fscores: [] },
-    hybrid: { precisions: [], recalls: [], fscores: []},
-};
-
-/* Fetch all and alive functions from the frameworks and export to csv */
-var csvData = "Framework,Analyzer,AllFunctions,DeadFunctions,ClaimedDeadFunctions,TrueDeadFunctions,AliveFunctions,ClaimedAliveFunctions,TrueAliveFunctions\n";
+/* Create the stats file for every framework */
 frameworks.forEach((framework) => {
-    var aliveFunctionsPath = path.join("todomvc", "examples", framework.name, ALIVE_FUNCTIONS_FILE);
-    var allFunctionsPath = path.join("todomvc", framework.path, ALL_FUNCTIONS_FILE);
-    var lacunaOutputDir = path.join("todomvc", framework.path.splice(8, 0, ".back"));
+    exportFrameworkStatistics(framework);
+});
 
-    var allFunctions = loadJSONFile(allFunctionsPath);
-    var aliveFunctions = loadJSONFile(aliveFunctionsPath);
+
+function exportFrameworkStatistics(framework) {
+    let directory = generateFrameworkDirectory(framework);
+    var aliveFunctionsPath = path.join(TODOMVC_DIR, EXAMPLES_DIR, framework.name, ALIVE_FUNCTIONS_FILE);
+    var allFunctionsPath = path.join(directory, ALL_FUNCTIONS_FILE);
+
+    try {
+        var allFunctions = loadJSONFile(allFunctionsPath);
+        instrumenterFixFile(allFunctions, framework);
+        var aliveFunctions = loadJSONFile(aliveFunctionsPath);
+        instrumenterFixFile(aliveFunctions, framework)
+    } catch (e) {
+        return // cant continue for this framework
+    }
 
     numberOfAliveFunctions = aliveFunctions.length;
     var numberOfFunctions = allFunctions.length;
     var numberOfDeadFunctions = numberOfFunctions - numberOfAliveFunctions;
 
-    ANALYZERS.forEach(analyzer => {
+    var csvData = "Analyzer,AllFunctions,DeadFunctions,ClaimedDeadFunctions,TrueDeadFunctions,AliveFunctions,ClaimedAliveFunctions,TrueAliveFunctions\n";
+    analyserCombinations.forEach(analyzercomb => {
         try {
-            var analyzerLogFile = "lacuna_" + analyzer.replace(/ /gi, "") + ".log";
-            var analyzerLogPath = path.join(lacunaOutputDir, analyzerLogFile);
+            var analyzerLogFile = "lacuna_" + analyzercomb.replace(/ /gi, "") + ".log";
+            var analyzerLogPath = path.join(directory, analyzerLogFile);
 
-            var lacunaObj = loadJSONFile(analyzerLogPath);
+            try {
+                var lacunaObj = loadJSONFile(analyzerLogPath);
+            } catch (e) {
+                return //cant continue for this analyserCombination
+            }
 
             var analyzerDeadFunctions = lacunaFixFile(lacunaObj.deadFunctions);
             var analyzerAliveFunctions = lacunaFixFile(lacunaObj.aliveFunctions);
@@ -73,12 +80,15 @@ frameworks.forEach((framework) => {
             var analyzerNumberOfFalseDeadFunctions = analyzerDeadFunctions.length - analyzerNumberOfTrueDeadFunctions;
             var analyzerNumberOfTrueAliveFunctions = numberOfAliveFunctions - analyzerNumberOfFalseDeadFunctions;
 
-            csvData += `${framework.name},${AnalyzerMap[analyzer]},${analyzerAllFunctions.length},${numberOfDeadFunctions},${analyzerDeadFunctions.length},${analyzerNumberOfTrueDeadFunctions},${numberOfAliveFunctions},${analyzerAliveFunctions.length},${analyzerNumberOfTrueAliveFunctions}\n`    
+            csvData += `${analyzercomb},${analyzerAllFunctions.length},${numberOfDeadFunctions},${analyzerDeadFunctions.length},${analyzerNumberOfTrueDeadFunctions},${numberOfAliveFunctions},${analyzerAliveFunctions.length},${analyzerNumberOfTrueAliveFunctions}\n`    
         } catch (e) { console.log(e); }
     });
-});
 
-fs.writeFileSync(path.join(__dirname, STATISTICS_FILE), csvData, 'utf8');
+    fs.writeFileSync(path.join(__dirname, STATISTICS_FOLDER, framework.name + ".csv"), csvData, 'utf8');
+}
+
+
+
 
 
 /* Helper functions */
@@ -92,11 +102,13 @@ function loadJSONFile(functionsFilePath) {
 function countTrueDeadFunctions(claimedDeadFunctions, aliveFunctions) {
     var counter = claimedDeadFunctions.length;
     claimedDeadFunctions.forEach((claimedDeadFunction) => {
+
         var match = aliveFunctions.some((aliveFunction) => {
             return path.normalize(aliveFunction.file) == path.normalize(claimedDeadFunction.file) &&
                 aliveFunction.range[0] == claimedDeadFunction.range[0] &&
                 aliveFunction.range[1] == claimedDeadFunction.range[1];
         });
+
         if (match) counter--; // for every alive deadfunction substract.
     });
 
@@ -122,3 +134,38 @@ function lacunaFixFile(funcs) {
 }
 
 
+function instrumenterFixFile(funcs, framework) {
+    var strip = 'todomvc/examples.lacunized.instrumented/' + framework.name;
+
+    funcs.forEach((func) => {
+        if (func.file.substr(0, strip.length) == strip) {
+            func.file = func.file.substr(strip.length + 1);
+        }
+    });
+}
+
+/**
+ * Will create all combinations of analysers as a space seperated string.
+ * 
+ * @param {*} analysers array of analysers that will be considered for the
+ * combinations.
+ */
+function generateAnalyserCombinations(analysers) {
+    let result = [];
+    let f = function(prefix, items) {
+        for (let i = 0; i < items.length; i++) {
+            let analyserCombination = (prefix + " " + items[i]).trim();
+            result.push(analyserCombination);
+            f(analyserCombination, items.slice(i + 1));
+        }
+    }
+    f('', analysers);
+    return result;
+}
+
+
+function generateFrameworkDirectory({path: frameworkPath}) {
+    frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_DIR); // append to examples    
+    let pwdFrameworkPath = path.join(TODOMVC_DIR, frameworkPath);
+    return pwdFrameworkPath;
+}

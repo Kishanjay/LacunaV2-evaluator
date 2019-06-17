@@ -1,0 +1,1655 @@
+Frameworks to test: 1
+Analyzer combinations to test: 255
+Number of runOptions: 255
+
+
+Run: 0
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 1
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 2
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 3
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 4
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 5
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 6
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 7
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 8
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 9
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 10
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 11
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 12
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 13
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 14
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 15
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 16
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 17
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 18
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 19
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 20
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 21
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 22
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 23
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 24
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 25
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 26
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 27
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 28
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 29
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 30
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 31
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 32
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 33
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 34
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 35
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 36
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 37
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 38
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 39
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 40
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 41
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 42
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 43
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 44
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 45
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 46
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 47
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 48
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 49
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 50
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 51
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 52
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 53
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 54
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 55
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 56
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 57
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 58
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 59
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 60
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 61
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 62
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 63
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 64
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 65
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 66
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 67
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 68
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 69
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 70
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 71
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 72
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 73
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 74
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 75
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 76
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 77
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 78
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 79
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 80
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 81
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 82
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 83
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 84
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 85
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 86
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 87
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 88
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 89
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 90
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 91
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 92
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 93
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 94
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 95
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 96
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 97
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 98
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 99
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 100
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 101
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 102
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 103
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 104
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 105
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 106
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 107
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 108
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 109
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 110
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 111
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 112
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 113
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 114
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 115
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 116
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 117
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 118
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 119
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 120
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 121
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 122
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 123
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 124
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 125
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+
+
+Run: 126
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/angular-dart
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+todomvc/examples.lacunized/angular-dart/lacuna_cache
+[31merror[39m: No valid normalization found
+[31merror[39m: [object Object]
+Finished

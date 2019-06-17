@@ -1,0 +1,3 @@
+Analyzer,AllFunctions,DeadFunctions,ClaimedDeadFunctions,TrueDeadFunctions,AliveFunctions,ClaimedAliveFunctions,TrueAliveFunctions
+static,131,33,106,32,98,25,24
+static nativecalls,131,33,70,23,98,61,51

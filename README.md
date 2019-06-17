@@ -21,8 +21,23 @@ Lets get down to business.
 1. Run `init.sh`
 2. In the todomvc folder run `git apply ../todomvc.diff`
 
-## Step 1. Acquiring the ground truth values
+## Step 1. Normalize all scripts that will be tested 
+This step will create a normalized version of the application:
+no inline scripts, no externally hosted scripts.
+
+`node todomvc_lacuna_normalizer.js`
+
+## Step 2. Acquire the Lacuna analyzer results
+`node todomvc_lacuna.js`
+`todomvc_run.sh`
 
 
-## Step 2. Running Lacuna on the projects
+## Step 3. Getting the ground truth values
+Fetch _all_functions.txt by running the instrumenter
 
+Get _alive_functions by running the following commands in the todomvc folder:
+`gulp test-server`
+in test folder
+`npm run test`
+
+(May require you to rename the example.lacunized.instrumented to examples)

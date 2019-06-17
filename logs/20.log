@@ -1,0 +1,1657 @@
+Frameworks to test: 1
+Analyzer combinations to test: 255
+Number of runOptions: 255
+
+
+Run: 0
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static"],"entry":"index.html","destination":null,"logfile":"lacuna_static.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_static.log
+
+
+Run: 1
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecalls.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecalls.log
+
+
+Run: 2
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compiler.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compiler.log
+
+
+Run: 3
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwala.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilerwala.log
+
+
+Run: 4
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","npm_cg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalanpm_cg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilerwalanpm_cg.log
+
+
+Run: 5
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","npm_cg","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalanpm_cgtajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilerwalanpm_cgtajs.log
+
+
+Run: 6
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","npm_cg","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalanpm_cgtajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilerwalanpm_cgtajsacg.log
+
+
+Run: 7
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","npm_cg","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalanpm_cgacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  npm_cg: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilerwalanpm_cgacg.log
+
+
+Run: 8
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalatajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilerwalatajs.log
+
+
+Run: 9
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalatajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilerwalatajsacg.log
+
+
+Run: 10
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","wala","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilerwalaacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  wala: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilerwalaacg.log
+
+
+Run: 11
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","npm_cg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilernpm_cg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilernpm_cg.log
+
+
+Run: 12
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","npm_cg","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilernpm_cgtajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true,
+  tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilernpm_cgtajs.log
+
+
+Run: 13
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","npm_cg","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilernpm_cgtajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true,
+  tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilernpm_cgtajsacg.log
+
+
+Run: 14
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","npm_cg","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilernpm_cgacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  npm_cg: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilernpm_cgacg.log
+
+
+Run: 15
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilertajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilertajs.log
+
+
+Run: 16
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compilertajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compilertajsacg.log
+
+
+Run: 17
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compileracg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[33mwarn[39m: [getNode] not found {"file":"js/libs/lavaca.js","range":[2287,2530]}
+[35msilly[39m: Analyzer[closure_compiler] aliveFunctions: 11953
+[32minfo[39m: Analyzer[closure_compiler] finished
+{ static: true, nativecalls: true, closure_compiler: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  closure_compiler: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsclosure_compileracg.log
+
+
+Run: 18
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","wala"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallswala.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true, nativecalls: true, wala: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallswala.log
+
+
+Run: 19
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","wala","npm_cg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallswalanpm_cg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true, nativecalls: true, wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true, nativecalls: true, wala: true, npm_cg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallswalanpm_cg.log
+
+
+Run: 20
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","wala","npm_cg","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallswalanpm_cgtajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true, nativecalls: true, wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true, nativecalls: true, wala: true, npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallswalanpm_cgtajs.log
+
+
+Run: 21
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","wala","npm_cg","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallswalanpm_cgtajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true, nativecalls: true, wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true, nativecalls: true, wala: true, npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true,
+  nativecalls: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  wala: true,
+  npm_cg: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallswalanpm_cgtajsacg.log
+
+
+Run: 22
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","wala","npm_cg","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallswalanpm_cgacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true, nativecalls: true, wala: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true, nativecalls: true, wala: true, npm_cg: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  wala: true,
+  npm_cg: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallswalanpm_cgacg.log
+
+
+Run: 23
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","wala","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallswalatajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true, nativecalls: true, wala: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true, nativecalls: true, wala: true, tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallswalatajs.log
+
+
+Run: 24
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","wala","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallswalatajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true, nativecalls: true, wala: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true, nativecalls: true, wala: true, tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  wala: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallswalatajsacg.log
+
+
+Run: 25
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","wala","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallswalaacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[31merror[39m: Analyser[WALA] timeout
+[35msilly[39m: Analyzer[wala] aliveFunctions: 0
+[32minfo[39m: Analyzer[wala] finished
+{ static: true, nativecalls: true, wala: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true, nativecalls: true, wala: true, acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallswalaacg.log
+
+
+Run: 26
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","npm_cg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsnpm_cg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true, nativecalls: true, npm_cg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsnpm_cg.log
+
+
+Run: 27
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","npm_cg","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsnpm_cgtajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true, nativecalls: true, npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true, nativecalls: true, npm_cg: true, tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsnpm_cgtajs.log
+
+
+Run: 28
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","npm_cg","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsnpm_cgtajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true, nativecalls: true, npm_cg: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true, nativecalls: true, npm_cg: true, tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true,
+  nativecalls: true,
+  npm_cg: true,
+  tajs: true,
+  acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsnpm_cgtajsacg.log
+
+
+Run: 29
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","npm_cg","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsnpm_cgacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[33mwarn[39m: [npm-cg] error - doesn't support multiple scripts
+[35msilly[39m: Analyzer[npm_cg] aliveFunctions: 0
+[32minfo[39m: Analyzer[npm_cg] finished
+{ static: true, nativecalls: true, npm_cg: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true, nativecalls: true, npm_cg: true, acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsnpm_cgacg.log
+
+
+Run: 30
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","tajs"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallstajs.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true, nativecalls: true, tajs: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallstajs.log
+
+
+Run: 31
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","tajs","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallstajsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+java -jar analyzers/tajs/tajs-all.jar -quiet -callgraph todomvc/examples.lacunized/lavaca_require/index.html
+[35msilly[39m: Analyzer[tajs] aliveFunctions: 0
+[32minfo[39m: Analyzer[tajs] finished
+{ static: true, nativecalls: true, tajs: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true, nativecalls: true, tajs: true, acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallstajsacg.log
+
+
+Run: 32
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","acg"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsacg.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 30
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[35msilly[39m: Analyzer[acg] aliveFunctions: 6658
+[32minfo[39m: Analyzer[acg] finished
+{ static: true, nativecalls: true, acg: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/lavaca_require/lacuna_staticnativecallsacg.log
+
+
+Run: 33
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/lavaca_require
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","closure_compiler"],"entry":"index.html","destination":null,"logfile":"lacuna_staticclosure_compiler.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/lavaca_require"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [17] node_modules/todomvc-common/base.js
+[35msilly[39m: [111] node_modules/requirejs/require.js
+[35msilly[39m: [853] js/libs/lavaca.js
+[35msilly[39m: [0] js/app/boot.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 8845
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at closureCompilerToLacunaFormatter (/Users/kishannirghin/Desktop/Scriptie.nosync/LacunaV2/analyzers/closure_compiler.js:86:25)
+    at /Users/kishannirghin/Desktop/Scriptie.nosync/LacunaV2/analyzers/closure_compiler.js:71:25
+    at exithandler (child_process.js:296:5)
+    at ChildProcess.errorhandler (child_process.js:308:5)
+    at ChildProcess.emit (events.js:182:13)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:238:12)
+    at onErrorNT (internal/child_process.js:407:16)
+    at process.internalTickCallback (internal/process/next_tick.js:72:19)

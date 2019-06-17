@@ -21,12 +21,7 @@ const ANALYZERS = ["static", "nativecalls", "dynamic", "closure_compiler", "wala
 
 start().then((result) => {
     console.log("Finished");
-}).catch((e) => {
-    console.log(e);
-    console.log("catch error");
-}).finally(() => {
-    console.log("finally");
-})
+});
 
 async function start() {
     let options = getRunOptions();
@@ -34,31 +29,35 @@ async function start() {
 
     let frameworks = getFrameworks(options);
     assert(frameworks, "Invalid frameworks");
-
+    console.log("Frameworks to test: " + frameworks.length);
     // createDestinationFolder();
 
     let analyserCombinations = generateAnalyserCombinations(ANALYZERS);
     assert(analyserCombinations, "Invalid analyserCombinations");
+    console.log("Analyzer combinations to test: " + analyserCombinations.length);
 
     let lacunaRunOptions = generateLacunaRunOptions(frameworks, analyserCombinations);
     assert(lacunaRunOptions, "Invalid lacunaRunOptions");
+    console.log("Number of runOptions: " + lacunaRunOptions.length);
     
     if (options.simulate) { console.log(lacunaRunOptions); process.exit(); }
 
+    let i = 0;
     for (let lacunaRunOption of lacunaRunOptions) {
         let containsDynamic = lacunaRunOption.analyzer.includes("dynamic");
         
         if (options.skipDynamic && containsDynamic) continue;
         if (options.onlyDynamic && !containsDynamic) continue;
 
-        let containsClosureCompiler = lacunaRunOption.analyzer.includes("closure_compiler");
-        if (!containsClosureCompiler) continue;
-
         try {
+            console.log("\n\nRun: " + i);
             await runLacuna(lacunaRunOption); // remove await for async **shocker**
         } catch (e) { console.log(e); }
         // NOTE: should wait for the dynamic analyser to function properly..
+        i++;
     }
+
+    return;
 }
 
 
