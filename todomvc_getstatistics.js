@@ -60,7 +60,7 @@ function exportFrameworkStatistics(framework) {
     var numberOfFunctions = allFunctions.length;
     var numberOfDeadFunctions = numberOfFunctions - numberOfAliveFunctions;
 
-    var csvData = "Analyzer,AllFunctions,DeadFunctions,ClaimedDeadFunctions,TrueDeadFunctions,AliveFunctions,ClaimedAliveFunctions,TrueAliveFunctions\n";
+    var csvData = "Analyzer,AllFunctions,DeadFunctions,PredictedDeadFunctions,TrueDeadFunctions(TP),AliveFunctions,PredictedAliveFunctions,TrueAliveFunctions,Accuracy,Precision,Recall,Fscore\n";
     analyserCombinations.forEach(analyzercomb => {
         try {
             var analyzerLogFile = "lacuna_" + analyzercomb.replace(/ /gi, "") + ".log";
@@ -80,7 +80,24 @@ function exportFrameworkStatistics(framework) {
             var analyzerNumberOfFalseDeadFunctions = analyzerDeadFunctions.length - analyzerNumberOfTrueDeadFunctions;
             var analyzerNumberOfTrueAliveFunctions = numberOfAliveFunctions - analyzerNumberOfFalseDeadFunctions;
 
-            csvData += `${analyzercomb},${analyzerAllFunctions.length},${numberOfDeadFunctions},${analyzerDeadFunctions.length},${analyzerNumberOfTrueDeadFunctions},${numberOfAliveFunctions},${analyzerAliveFunctions.length},${analyzerNumberOfTrueAliveFunctions}\n`    
+            // confusion matrix code
+            var tp = analyzerNumberOfTrueDeadFunctions;
+            var fp = analyzerDeadFunctions.length - tp;
+            var tn = analyzerNumberOfTrueAliveFunctions;
+            var fn = analyzerAliveFunctions.length - tn;
+
+            var accuracy = (tn + tp) / (analyzerAllFunctions.length);
+            var precision = tp / analyzerDeadFunctions.length;
+            var recall = analyzerNumberOfTrueAliveFunctions / numberOfAliveFunctions;
+            var fscore = 2 * ((precision * recall) / (precision + recall));
+
+            var significance = 4;
+            accuracy = accuracy.toFixed(significance);
+            precision = precision.toFixed(significance);
+            recall = recall.toFixed(significance);
+            fscore = fscore.toFixed(significance);
+
+            csvData += `${analyzercomb},${analyzerAllFunctions.length},${numberOfDeadFunctions},${analyzerDeadFunctions.length},${analyzerNumberOfTrueDeadFunctions},${numberOfAliveFunctions},${analyzerAliveFunctions.length},${analyzerNumberOfTrueAliveFunctions},${accuracy},${precision},${recall},${fscore}\n`;
         } catch (e) { console.log(e); }
     });
 

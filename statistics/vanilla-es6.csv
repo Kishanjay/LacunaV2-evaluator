@@ -1,3 +1,3 @@
-Analyzer,AllFunctions,DeadFunctions,ClaimedDeadFunctions,TrueDeadFunctions,AliveFunctions,ClaimedAliveFunctions,TrueAliveFunctions
-static,80,11,37,7,69,43,39
-static nativecalls,80,11,35,7,69,45,41
+Analyzer,AllFunctions,DeadFunctions,PredictedDeadFunctions,TrueDeadFunctions(TP),AliveFunctions,PredictedAliveFunctions,TrueAliveFunctions,Accuracy,Precision,Recall,Fscore
+static,80,11,37,7,69,43,39,0.5750,0.1892,0.5652,0.2835
+static nativecalls,80,11,35,7,69,45,41,0.6000,0.2000,0.5942,0.2993
