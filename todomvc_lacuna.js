@@ -30,6 +30,8 @@ async function start() {
     let frameworks = getFrameworks(options);
     assert(frameworks, "Invalid frameworks");
     console.log("Frameworks to test: " + frameworks.length);
+    
+    // Only uncomment when manually testing applications.
     // createDestinationFolder();
 
     let analyserCombinations = generateAnalyserCombinations(ANALYZERS);
@@ -68,7 +70,7 @@ async function start() {
 function getRunOptions() {
     let defaultOptions = {
         offset: 0,
-        length: 1,
+        length: 1, 
         simulate: false,
         skipDynamic: false,
         onlyDynamic: false
@@ -76,7 +78,7 @@ function getRunOptions() {
     try {
         let argv = commandLineArgs([
             { name: 'offset', type: Number, alias: 'o' },
-            { name: 'length', type: Number, alias: 'l' },   
+            { name: 'length', type: Number, alias: 'l' }, // Number of frameworks that will be evaluated
             { name: 'simulate', type: Boolean }, // DEBUG only log the runOptions (no execution)
             { name: 'skipDynamic', type: Boolean }, // Skips run that use dynamic analyser
             { name: 'onlyDynamic', type: Boolean} // Only do runs that use dynamic analyser
@@ -182,7 +184,7 @@ function runLacuna(runOption) {
  * Fetches the directory for a framework
  */
 function generateFrameworkDirectory({path: frameworkPath}) {
-    frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_OUTPUT_DIR); // append to examples    
+    frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_OUTPUT_DIR); // replaces examples
     let pwdFrameworkPath = path.join(TODOMVC_DIR, frameworkPath);
     return pwdFrameworkPath;
 }

@@ -5,7 +5,7 @@
 counter=0
 while [ $counter -le 42 ]
 do
-node --max-old-space-size=8192 todomvc_lacuna.js --skipDynamic -o $counter > ./logs/$counter.log
+node --max-old-space-size=8192 todomvc_lacuna.js -o $counter > ./logs/$counter.log
 ((counter++))
 done
 # node todomvc_lacuna.js -o 10

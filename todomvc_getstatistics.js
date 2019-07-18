@@ -16,7 +16,8 @@ const fs = require("fs");
 const path = require("path");
 
 const TODOMVC_DIR = "todomvc";
-const EXAMPLES_DIR = "examples";
+const EXAMPLES_DIR = "examples.lacunized"; /* With the lacunized logs */
+const EXAMPLES_DIR_GROUNDTRUTH = "examples.done"; /* With the ground truth values */
 const STATISTICS_FOLDER = "statistics";
 
 /**
@@ -29,7 +30,7 @@ var frameworks = frameworkPathLookup();
 process.chdir(cwd);
 
 /* The analyzers that have been used by Lacuna */
-const ANALYZERS = ["static", "nativecalls", "dynamic", "closure_compiler", "wala", "npm_cg", "tajs", "acg"];
+const ANALYZERS = ["static", "nativecalls", "dynamic", "closure_compiler", "wala", "npm_cg", "tajs", "acg"]; //should be in the same order as the todomvc_lacuna script
 let analyserCombinations = generateAnalyserCombinations(ANALYZERS);
 
 /* Filenames should be inline with the instrumenter and instrumentation_server */
@@ -43,9 +44,10 @@ frameworks.forEach((framework) => {
 
 
 function exportFrameworkStatistics(framework) {
+    let groundTruthDirectory = generateGroundTruthFrameworkDirectory(framework);
     let directory = generateFrameworkDirectory(framework);
-    var aliveFunctionsPath = path.join(TODOMVC_DIR, EXAMPLES_DIR, framework.name, ALIVE_FUNCTIONS_FILE);
-    var allFunctionsPath = path.join(directory, ALL_FUNCTIONS_FILE);
+    var aliveFunctionsPath = path.join(TODOMVC_DIR, EXAMPLES_DIR_GROUNDTRUTH, framework.name, ALIVE_FUNCTIONS_FILE); // stored somewhere else than the framework folder
+    var allFunctionsPath = path.join(groundTruthDirectory, ALL_FUNCTIONS_FILE); 
 
     try {
         var allFunctions = loadJSONFile(allFunctionsPath);
@@ -78,6 +80,14 @@ function exportFrameworkStatistics(framework) {
 
             var analyzerNumberOfTrueDeadFunctions = countTrueDeadFunctions(analyzerDeadFunctions, aliveFunctions);
             var analyzerNumberOfFalseDeadFunctions = analyzerDeadFunctions.length - analyzerNumberOfTrueDeadFunctions;
+
+            /**
+             * NumberOfAliveFunctions = all alive functions according to the instrumenter.
+             * analyzerNumberOfTrueDeadFunctions = All functions that were not dead according to the analyzer (undetected), that are not alive.
+             * analyzerNumberOfFalseDeadFunctions = The claimed dead functions - the amount that is actually dead 
+             *                                    = functions that were not detected by the analyzer but were alive
+             * analyzerNumberOfTrueAliveFunctions = Detected alive functions that were alive
+             */
             var analyzerNumberOfTrueAliveFunctions = numberOfAliveFunctions - analyzerNumberOfFalseDeadFunctions;
 
             // confusion matrix code
@@ -183,6 +193,12 @@ function generateAnalyserCombinations(analysers) {
 
 function generateFrameworkDirectory({path: frameworkPath}) {
     frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_DIR); // append to examples    
+    let pwdFrameworkPath = path.join(TODOMVC_DIR, frameworkPath);
+    return pwdFrameworkPath;
+}
+
+function generateGroundTruthFrameworkDirectory({path: frameworkPath}) {
+    frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_DIR_GROUNDTRUTH); // append to examples    
     let pwdFrameworkPath = path.join(TODOMVC_DIR, frameworkPath);
     return pwdFrameworkPath;
 }

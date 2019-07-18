@@ -1,10 +1,42 @@
 Analyzer,AllFunctions,DeadFunctions,PredictedDeadFunctions,TrueDeadFunctions(TP),AliveFunctions,PredictedAliveFunctions,TrueAliveFunctions,Accuracy,Precision,Recall,Fscore
 static,357,111,264,102,246,93,84,0.5210,0.3864,0.3415,0.3625
 static nativecalls,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
+static nativecalls dynamic,357,111,71,64,246,286,239,0.8487,0.9014,0.9715,0.9352
+static nativecalls dynamic closure_compiler,357,111,68,61,246,291,239,0.8403,0.8971,0.9715,0.9328
+static nativecalls dynamic closure_compiler wala,357,111,68,61,246,291,239,0.8403,0.8971,0.9715,0.9328
+static nativecalls dynamic closure_compiler wala npm_cg,357,111,68,61,246,291,239,0.8403,0.8971,0.9715,0.9328
+static nativecalls dynamic closure_compiler wala npm_cg tajs,357,111,68,61,246,291,239,0.8403,0.8971,0.9715,0.9328
+static nativecalls dynamic closure_compiler wala npm_cg tajs acg,357,111,63,56,246,296,239,0.8263,0.8889,0.9715,0.9284
+static nativecalls dynamic closure_compiler wala npm_cg acg,357,111,63,56,246,296,239,0.8263,0.8889,0.9715,0.9284
+static nativecalls dynamic closure_compiler wala tajs,357,111,68,61,246,291,239,0.8403,0.8971,0.9715,0.9328
+static nativecalls dynamic closure_compiler wala tajs acg,357,111,63,56,246,296,239,0.8263,0.8889,0.9715,0.9284
+static nativecalls dynamic closure_compiler wala acg,357,111,63,56,246,296,239,0.8263,0.8889,0.9715,0.9284
+static nativecalls dynamic closure_compiler npm_cg,357,111,68,61,246,291,239,0.8403,0.8971,0.9715,0.9328
+static nativecalls dynamic closure_compiler npm_cg tajs,357,111,68,61,246,291,239,0.8403,0.8971,0.9715,0.9328
+static nativecalls dynamic closure_compiler npm_cg tajs acg,357,111,63,56,246,296,239,0.8263,0.8889,0.9715,0.9284
+static nativecalls dynamic closure_compiler npm_cg acg,357,111,63,56,246,296,239,0.8263,0.8889,0.9715,0.9284
+static nativecalls dynamic closure_compiler tajs,357,111,68,61,246,291,239,0.8403,0.8971,0.9715,0.9328
+static nativecalls dynamic closure_compiler tajs acg,357,111,63,56,246,296,239,0.8263,0.8889,0.9715,0.9284
+static nativecalls dynamic closure_compiler acg,357,111,63,56,246,296,239,0.8263,0.8889,0.9715,0.9284
+static nativecalls dynamic wala,357,111,71,64,246,286,239,0.8487,0.9014,0.9715,0.9352
+static nativecalls dynamic wala npm_cg,357,111,71,64,246,286,239,0.8487,0.9014,0.9715,0.9352
+static nativecalls dynamic wala npm_cg tajs,357,111,71,64,246,286,239,0.8487,0.9014,0.9715,0.9352
+static nativecalls dynamic wala npm_cg tajs acg,357,111,65,58,246,292,239,0.8319,0.8923,0.9715,0.9302
+static nativecalls dynamic wala npm_cg acg,357,111,65,58,246,292,239,0.8319,0.8923,0.9715,0.9302
+static nativecalls dynamic wala tajs,357,111,71,64,246,286,239,0.8487,0.9014,0.9715,0.9352
+static nativecalls dynamic wala tajs acg,357,111,65,58,246,292,239,0.8319,0.8923,0.9715,0.9302
+static nativecalls dynamic wala acg,357,111,65,58,246,292,239,0.8319,0.8923,0.9715,0.9302
+static nativecalls dynamic npm_cg,357,111,71,64,246,286,239,0.8487,0.9014,0.9715,0.9352
+static nativecalls dynamic npm_cg tajs,357,111,71,64,246,286,239,0.8487,0.9014,0.9715,0.9352
+static nativecalls dynamic npm_cg tajs acg,357,111,65,58,246,292,239,0.8319,0.8923,0.9715,0.9302
+static nativecalls dynamic npm_cg acg,357,111,65,58,246,292,239,0.8319,0.8923,0.9715,0.9302
+static nativecalls dynamic tajs,357,111,71,64,246,286,239,0.8487,0.9014,0.9715,0.9352
+static nativecalls dynamic tajs acg,357,111,65,58,246,292,239,0.8319,0.8923,0.9715,0.9302
+static nativecalls dynamic acg,357,111,65,58,246,292,239,0.8319,0.8923,0.9715,0.9302
 static nativecalls closure_compiler,357,111,226,93,246,133,113,0.5770,0.4115,0.4593,0.4341
 static nativecalls closure_compiler wala,357,111,226,93,246,133,113,0.5770,0.4115,0.4593,0.4341
 static nativecalls closure_compiler wala npm_cg,357,111,226,93,246,133,113,0.5770,0.4115,0.4593,0.4341
-static nativecalls closure_compiler wala npm_cg tajs,357,111,225,92,246,134,113,0.5742,0.4089,0.4593,0.4327
+static nativecalls closure_compiler wala npm_cg tajs,357,111,226,93,246,133,113,0.5770,0.4115,0.4593,0.4341
 static nativecalls closure_compiler wala npm_cg tajs acg,357,111,148,57,246,211,155,0.5938,0.3851,0.6301,0.4781
 static nativecalls closure_compiler wala npm_cg acg,357,111,148,57,246,211,155,0.5938,0.3851,0.6301,0.4781
 static nativecalls closure_compiler wala tajs,357,111,226,93,246,133,113,0.5770,0.4115,0.4593,0.4341
@@ -17,13 +49,13 @@ static nativecalls closure_compiler npm_cg acg,357,111,148,57,246,211,155,0.5938
 static nativecalls closure_compiler tajs,357,111,226,93,246,133,113,0.5770,0.4115,0.4593,0.4341
 static nativecalls closure_compiler tajs acg,357,111,148,57,246,211,155,0.5938,0.3851,0.6301,0.4781
 static nativecalls closure_compiler acg,357,111,148,57,246,211,155,0.5938,0.3851,0.6301,0.4781
-static nativecalls wala,357,111,262,100,246,95,84,0.5154,0.3817,0.3415,0.3605
-static nativecalls wala npm_cg,357,111,262,100,246,95,84,0.5154,0.3817,0.3415,0.3605
-static nativecalls wala npm_cg tajs,357,111,262,100,246,95,84,0.5154,0.3817,0.3415,0.3605
-static nativecalls wala npm_cg tajs acg,357,111,154,58,246,203,150,0.5826,0.3766,0.6098,0.4656
+static nativecalls wala,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
+static nativecalls wala npm_cg,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
+static nativecalls wala npm_cg tajs,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
+static nativecalls wala npm_cg tajs acg,357,111,155,59,246,202,150,0.5854,0.3806,0.6098,0.4687
 static nativecalls wala npm_cg acg,357,111,155,59,246,202,150,0.5854,0.3806,0.6098,0.4687
 static nativecalls wala tajs,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
-static nativecalls wala tajs acg,357,111,154,58,246,203,150,0.5826,0.3766,0.6098,0.4656
+static nativecalls wala tajs acg,357,111,155,59,246,202,150,0.5854,0.3806,0.6098,0.4687
 static nativecalls wala acg,357,111,155,59,246,202,150,0.5854,0.3806,0.6098,0.4687
 static nativecalls npm_cg,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
 static nativecalls npm_cg tajs,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
@@ -32,15 +64,47 @@ static nativecalls npm_cg acg,357,111,155,59,246,202,150,0.5854,0.3806,0.6098,0.
 static nativecalls tajs,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
 static nativecalls tajs acg,357,111,155,59,246,202,150,0.5854,0.3806,0.6098,0.4687
 static nativecalls acg,357,111,155,59,246,202,150,0.5854,0.3806,0.6098,0.4687
+static dynamic,357,111,82,71,246,275,235,0.8571,0.8659,0.9553,0.9084
+static dynamic closure_compiler,357,111,79,68,246,280,235,0.8487,0.8608,0.9553,0.9056
+static dynamic closure_compiler wala,357,111,79,68,246,280,235,0.8487,0.8608,0.9553,0.9056
+static dynamic closure_compiler wala npm_cg,357,111,79,68,246,280,235,0.8487,0.8608,0.9553,0.9056
+static dynamic closure_compiler wala npm_cg tajs,357,111,79,68,246,280,235,0.8487,0.8608,0.9553,0.9056
+static dynamic closure_compiler wala npm_cg tajs acg,357,111,73,63,246,286,236,0.8375,0.8630,0.9593,0.9086
+static dynamic closure_compiler wala npm_cg acg,357,111,73,63,246,286,236,0.8375,0.8630,0.9593,0.9086
+static dynamic closure_compiler wala tajs,357,111,79,68,246,280,235,0.8487,0.8608,0.9553,0.9056
+static dynamic closure_compiler wala tajs acg,357,111,73,63,246,286,236,0.8375,0.8630,0.9593,0.9086
+static dynamic closure_compiler wala acg,357,111,73,63,246,286,236,0.8375,0.8630,0.9593,0.9086
+static dynamic closure_compiler npm_cg,357,111,79,68,246,280,235,0.8487,0.8608,0.9553,0.9056
+static dynamic closure_compiler npm_cg tajs,357,111,79,68,246,280,235,0.8487,0.8608,0.9553,0.9056
+static dynamic closure_compiler npm_cg tajs acg,357,111,73,63,246,286,236,0.8375,0.8630,0.9593,0.9086
+static dynamic closure_compiler npm_cg acg,357,111,73,63,246,286,236,0.8375,0.8630,0.9593,0.9086
+static dynamic closure_compiler tajs,357,111,79,68,246,280,235,0.8487,0.8608,0.9553,0.9056
+static dynamic closure_compiler tajs acg,357,111,73,63,246,286,236,0.8375,0.8630,0.9593,0.9086
+static dynamic closure_compiler acg,357,111,73,63,246,286,236,0.8375,0.8630,0.9593,0.9086
+static dynamic wala,357,111,82,71,246,275,235,0.8571,0.8659,0.9553,0.9084
+static dynamic wala npm_cg,357,111,82,71,246,275,235,0.8571,0.8659,0.9553,0.9084
+static dynamic wala npm_cg tajs,357,111,82,71,246,275,235,0.8571,0.8659,0.9553,0.9084
+static dynamic wala npm_cg tajs acg,357,111,75,65,246,282,236,0.8431,0.8667,0.9593,0.9107
+static dynamic wala npm_cg acg,357,111,75,65,246,282,236,0.8431,0.8667,0.9593,0.9107
+static dynamic wala tajs,357,111,82,71,246,275,235,0.8571,0.8659,0.9553,0.9084
+static dynamic wala tajs acg,357,111,75,65,246,282,236,0.8431,0.8667,0.9593,0.9107
+static dynamic wala acg,357,111,75,65,246,282,236,0.8431,0.8667,0.9593,0.9107
+static dynamic npm_cg,357,111,82,71,246,275,235,0.8571,0.8659,0.9553,0.9084
+static dynamic npm_cg tajs,357,111,82,71,246,275,235,0.8571,0.8659,0.9553,0.9084
+static dynamic npm_cg tajs acg,357,111,75,65,246,282,236,0.8431,0.8667,0.9593,0.9107
+static dynamic npm_cg acg,357,111,75,65,246,282,236,0.8431,0.8667,0.9593,0.9107
+static dynamic tajs,357,111,82,71,246,275,235,0.8571,0.8659,0.9553,0.9084
+static dynamic tajs acg,357,111,75,65,246,282,236,0.8431,0.8667,0.9593,0.9107
+static dynamic acg,357,111,75,65,246,282,236,0.8431,0.8667,0.9593,0.9107
 static closure_compiler,357,111,233,96,246,126,109,0.5742,0.4120,0.4431,0.4270
 static closure_compiler wala,357,111,233,96,246,126,109,0.5742,0.4120,0.4431,0.4270
-static closure_compiler wala npm_cg,357,111,232,95,246,127,109,0.5714,0.4095,0.4431,0.4256
+static closure_compiler wala npm_cg,357,111,233,96,246,126,109,0.5742,0.4120,0.4431,0.4270
 static closure_compiler wala npm_cg tajs,357,111,233,96,246,126,109,0.5742,0.4120,0.4431,0.4270
-static closure_compiler wala npm_cg tajs acg,357,111,156,62,246,203,152,0.5994,0.3974,0.6179,0.4837
+static closure_compiler wala npm_cg tajs acg,357,111,157,63,246,202,152,0.6022,0.4013,0.6179,0.4866
 static closure_compiler wala npm_cg acg,357,111,157,63,246,202,152,0.6022,0.4013,0.6179,0.4866
 static closure_compiler wala tajs,357,111,233,96,246,126,109,0.5742,0.4120,0.4431,0.4270
-static closure_compiler wala tajs acg,357,111,156,62,246,203,152,0.5994,0.3974,0.6179,0.4837
-static closure_compiler wala acg,357,111,156,62,246,203,152,0.5994,0.3974,0.6179,0.4837
+static closure_compiler wala tajs acg,357,111,157,63,246,202,152,0.6022,0.4013,0.6179,0.4866
+static closure_compiler wala acg,357,111,157,63,246,202,152,0.6022,0.4013,0.6179,0.4866
 static closure_compiler npm_cg,357,111,233,96,246,126,109,0.5742,0.4120,0.4431,0.4270
 static closure_compiler npm_cg tajs,357,111,233,96,246,126,109,0.5742,0.4120,0.4431,0.4270
 static closure_compiler npm_cg tajs acg,357,111,157,63,246,202,152,0.6022,0.4013,0.6179,0.4866
@@ -48,7 +112,7 @@ static closure_compiler npm_cg acg,357,111,157,63,246,202,152,0.6022,0.4013,0.61
 static closure_compiler tajs,357,111,233,96,246,126,109,0.5742,0.4120,0.4431,0.4270
 static closure_compiler tajs acg,357,111,157,63,246,202,152,0.6022,0.4013,0.6179,0.4866
 static closure_compiler acg,357,111,157,63,246,202,152,0.6022,0.4013,0.6179,0.4866
-static wala,357,111,263,101,246,94,84,0.5182,0.3840,0.3415,0.3615
+static wala,357,111,264,102,246,93,84,0.5210,0.3864,0.3415,0.3625
 static wala npm_cg,357,111,264,102,246,93,84,0.5210,0.3864,0.3415,0.3625
 static wala npm_cg tajs,357,111,264,102,246,93,84,0.5210,0.3864,0.3415,0.3625
 static wala npm_cg tajs acg,357,111,164,65,246,193,147,0.5938,0.3963,0.5976,0.4766
@@ -64,11 +128,43 @@ static tajs,357,111,264,102,246,93,84,0.5210,0.3864,0.3415,0.3625
 static tajs acg,357,111,164,65,246,193,147,0.5938,0.3963,0.5976,0.4766
 static acg,357,111,164,65,246,193,147,0.5938,0.3963,0.5976,0.4766
 nativecalls,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
+nativecalls dynamic,357,111,129,106,246,228,223,0.9216,0.8217,0.9065,0.8620
+nativecalls dynamic closure_compiler,357,111,112,95,246,247,229,0.9076,0.8482,0.9309,0.8876
+nativecalls dynamic closure_compiler wala,357,111,112,95,246,247,229,0.9076,0.8482,0.9309,0.8876
+nativecalls dynamic closure_compiler wala npm_cg,357,111,112,95,246,247,229,0.9076,0.8482,0.9309,0.8876
+nativecalls dynamic closure_compiler wala npm_cg tajs,357,111,112,95,246,247,229,0.9076,0.8482,0.9309,0.8876
+nativecalls dynamic closure_compiler wala npm_cg tajs acg,357,111,70,63,246,289,239,0.8459,0.9000,0.9715,0.9344
+nativecalls dynamic closure_compiler wala npm_cg acg,357,111,70,63,246,289,239,0.8459,0.9000,0.9715,0.9344
+nativecalls dynamic closure_compiler wala tajs,357,111,112,95,246,247,229,0.9076,0.8482,0.9309,0.8876
+nativecalls dynamic closure_compiler wala tajs acg,357,111,70,63,246,289,239,0.8459,0.9000,0.9715,0.9344
+nativecalls dynamic closure_compiler wala acg,357,111,70,63,246,289,239,0.8459,0.9000,0.9715,0.9344
+nativecalls dynamic closure_compiler npm_cg,357,111,112,95,246,247,229,0.9076,0.8482,0.9309,0.8876
+nativecalls dynamic closure_compiler npm_cg tajs,357,111,112,95,246,247,229,0.9076,0.8482,0.9309,0.8876
+nativecalls dynamic closure_compiler npm_cg tajs acg,357,111,70,63,246,289,239,0.8459,0.9000,0.9715,0.9344
+nativecalls dynamic closure_compiler npm_cg acg,357,111,70,63,246,289,239,0.8459,0.9000,0.9715,0.9344
+nativecalls dynamic closure_compiler tajs,357,111,112,95,246,247,229,0.9076,0.8482,0.9309,0.8876
+nativecalls dynamic closure_compiler tajs acg,357,111,70,63,246,289,239,0.8459,0.9000,0.9715,0.9344
+nativecalls dynamic closure_compiler acg,357,111,70,63,246,289,239,0.8459,0.9000,0.9715,0.9344
+nativecalls dynamic wala,357,111,129,106,246,228,223,0.9216,0.8217,0.9065,0.8620
+nativecalls dynamic wala npm_cg,357,111,129,106,246,228,223,0.9216,0.8217,0.9065,0.8620
+nativecalls dynamic wala npm_cg tajs,357,111,129,106,246,228,223,0.9216,0.8217,0.9065,0.8620
+nativecalls dynamic wala npm_cg tajs acg,357,111,72,65,246,285,239,0.8515,0.9028,0.9715,0.9359
+nativecalls dynamic wala npm_cg acg,357,111,72,65,246,285,239,0.8515,0.9028,0.9715,0.9359
+nativecalls dynamic wala tajs,357,111,129,106,246,228,223,0.9216,0.8217,0.9065,0.8620
+nativecalls dynamic wala tajs acg,357,111,72,65,246,285,239,0.8515,0.9028,0.9715,0.9359
+nativecalls dynamic wala acg,357,111,72,65,246,285,239,0.8515,0.9028,0.9715,0.9359
+nativecalls dynamic npm_cg,357,111,129,106,246,228,223,0.9216,0.8217,0.9065,0.8620
+nativecalls dynamic npm_cg tajs,357,111,129,106,246,228,223,0.9216,0.8217,0.9065,0.8620
+nativecalls dynamic npm_cg tajs acg,357,111,72,65,246,285,239,0.8515,0.9028,0.9715,0.9359
+nativecalls dynamic npm_cg acg,357,111,72,65,246,285,239,0.8515,0.9028,0.9715,0.9359
+nativecalls dynamic tajs,357,111,129,106,246,228,223,0.9216,0.8217,0.9065,0.8620
+nativecalls dynamic tajs acg,357,111,72,65,246,285,239,0.8515,0.9028,0.9715,0.9359
+nativecalls dynamic acg,357,111,72,65,246,285,239,0.8515,0.9028,0.9715,0.9359
 nativecalls closure_compiler,357,111,324,100,246,35,22,0.3417,0.3086,0.0894,0.1387
 nativecalls closure_compiler wala,357,111,324,100,246,35,22,0.3417,0.3086,0.0894,0.1387
 nativecalls closure_compiler wala npm_cg,357,111,324,100,246,35,22,0.3417,0.3086,0.0894,0.1387
 nativecalls closure_compiler wala npm_cg tajs,357,111,324,100,246,35,22,0.3417,0.3086,0.0894,0.1387
-nativecalls closure_compiler wala npm_cg tajs acg,357,111,202,63,246,157,107,0.4762,0.3119,0.4350,0.3633
+nativecalls closure_compiler wala npm_cg tajs acg,357,111,203,64,246,156,107,0.4790,0.3153,0.4350,0.3656
 nativecalls closure_compiler wala npm_cg acg,357,111,203,64,246,156,107,0.4790,0.3153,0.4350,0.3656
 nativecalls closure_compiler wala tajs,357,111,324,100,246,35,22,0.3417,0.3086,0.0894,0.1387
 nativecalls closure_compiler wala tajs acg,357,111,203,64,246,156,107,0.4790,0.3153,0.4350,0.3656
@@ -82,7 +178,7 @@ nativecalls closure_compiler tajs acg,357,111,203,64,246,156,107,0.4790,0.3153,0
 nativecalls closure_compiler acg,357,111,203,64,246,156,107,0.4790,0.3153,0.4350,0.3656
 nativecalls wala,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
 nativecalls wala npm_cg,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
-nativecalls wala npm_cg tajs,357,111,347,108,246,10,7,0.3221,0.3112,0.0285,0.0521
+nativecalls wala npm_cg tajs,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
 nativecalls wala npm_cg tajs acg,357,111,210,66,246,147,102,0.4706,0.3143,0.4146,0.3576
 nativecalls wala npm_cg acg,357,111,210,66,246,147,102,0.4706,0.3143,0.4146,0.3576
 nativecalls wala tajs,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
@@ -95,11 +191,43 @@ nativecalls npm_cg acg,357,111,210,66,246,147,102,0.4706,0.3143,0.4146,0.3576
 nativecalls tajs,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
 nativecalls tajs acg,357,111,210,66,246,147,102,0.4706,0.3143,0.4146,0.3576
 nativecalls acg,357,111,210,66,246,147,102,0.4706,0.3143,0.4146,0.3576
+dynamic,357,111,135,111,246,222,222,0.9328,0.8222,0.9024,0.8605
+dynamic closure_compiler,357,111,121,102,246,238,227,0.9216,0.8430,0.9228,0.8811
+dynamic closure_compiler wala,357,111,121,102,246,238,227,0.9216,0.8430,0.9228,0.8811
+dynamic closure_compiler wala npm_cg,357,111,121,102,246,238,227,0.9216,0.8430,0.9228,0.8811
+dynamic closure_compiler wala npm_cg tajs,357,111,121,102,246,238,227,0.9216,0.8430,0.9228,0.8811
+dynamic closure_compiler wala npm_cg tajs acg,357,111,80,70,246,279,236,0.8571,0.8750,0.9593,0.9152
+dynamic closure_compiler wala npm_cg acg,357,111,80,70,246,279,236,0.8571,0.8750,0.9593,0.9152
+dynamic closure_compiler wala tajs,357,111,121,102,246,238,227,0.9216,0.8430,0.9228,0.8811
+dynamic closure_compiler wala tajs acg,357,111,80,70,246,279,236,0.8571,0.8750,0.9593,0.9152
+dynamic closure_compiler wala acg,357,111,80,70,246,279,236,0.8571,0.8750,0.9593,0.9152
+dynamic closure_compiler npm_cg,357,111,121,102,246,238,227,0.9216,0.8430,0.9228,0.8811
+dynamic closure_compiler npm_cg tajs,357,111,121,102,246,238,227,0.9216,0.8430,0.9228,0.8811
+dynamic closure_compiler npm_cg tajs acg,357,111,80,70,246,279,236,0.8571,0.8750,0.9593,0.9152
+dynamic closure_compiler npm_cg acg,357,111,80,70,246,279,236,0.8571,0.8750,0.9593,0.9152
+dynamic closure_compiler tajs,357,111,121,102,246,238,227,0.9216,0.8430,0.9228,0.8811
+dynamic closure_compiler tajs acg,357,111,80,70,246,279,236,0.8571,0.8750,0.9593,0.9152
+dynamic closure_compiler acg,357,111,80,70,246,279,236,0.8571,0.8750,0.9593,0.9152
+dynamic wala,357,111,135,111,246,222,222,0.9328,0.8222,0.9024,0.8605
+dynamic wala npm_cg,357,111,135,111,246,222,222,0.9328,0.8222,0.9024,0.8605
+dynamic wala npm_cg tajs,357,111,135,111,246,222,222,0.9328,0.8222,0.9024,0.8605
+dynamic wala npm_cg tajs acg,357,111,82,72,246,275,236,0.8627,0.8780,0.9593,0.9169
+dynamic wala npm_cg acg,357,111,82,72,246,275,236,0.8627,0.8780,0.9593,0.9169
+dynamic wala tajs,357,111,135,111,246,222,222,0.9328,0.8222,0.9024,0.8605
+dynamic wala tajs acg,357,111,82,72,246,275,236,0.8627,0.8780,0.9593,0.9169
+dynamic wala acg,357,111,82,72,246,275,236,0.8627,0.8780,0.9593,0.9169
+dynamic npm_cg,357,111,135,111,246,222,222,0.9328,0.8222,0.9024,0.8605
+dynamic npm_cg tajs,357,111,135,111,246,222,222,0.9328,0.8222,0.9024,0.8605
+dynamic npm_cg tajs acg,357,111,82,72,246,275,236,0.8627,0.8780,0.9593,0.9169
+dynamic npm_cg acg,357,111,82,72,246,275,236,0.8627,0.8780,0.9593,0.9169
+dynamic tajs,357,111,135,111,246,222,222,0.9328,0.8222,0.9024,0.8605
+dynamic tajs acg,357,111,82,72,246,275,236,0.8627,0.8780,0.9593,0.9169
+dynamic acg,357,111,82,72,246,275,236,0.8627,0.8780,0.9593,0.9169
 closure_compiler,357,111,327,102,246,32,21,0.3445,0.3119,0.0854,0.1340
 closure_compiler wala,357,111,327,102,246,32,21,0.3445,0.3119,0.0854,0.1340
-closure_compiler wala npm_cg,357,111,320,100,246,39,26,0.3529,0.3125,0.1057,0.1580
+closure_compiler wala npm_cg,357,111,327,102,246,32,21,0.3445,0.3119,0.0854,0.1340
 closure_compiler wala npm_cg tajs,357,111,327,102,246,32,21,0.3445,0.3119,0.0854,0.1340
-closure_compiler wala npm_cg tajs acg,357,111,211,69,246,148,104,0.4846,0.3270,0.4228,0.3688
+closure_compiler wala npm_cg tajs acg,357,111,212,70,246,147,104,0.4874,0.3302,0.4228,0.3708
 closure_compiler wala npm_cg acg,357,111,212,70,246,147,104,0.4874,0.3302,0.4228,0.3708
 closure_compiler wala tajs,357,111,327,102,246,32,21,0.3445,0.3119,0.0854,0.1340
 closure_compiler wala tajs acg,357,111,212,70,246,147,104,0.4874,0.3302,0.4228,0.3708
@@ -113,11 +241,11 @@ closure_compiler tajs acg,357,111,212,70,246,147,104,0.4874,0.3302,0.4228,0.3708
 closure_compiler acg,357,111,212,70,246,147,104,0.4874,0.3302,0.4228,0.3708
 wala,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
 wala npm_cg,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
-wala npm_cg tajs,357,111,348,109,246,9,7,0.3249,0.3132,0.0285,0.0522
-wala npm_cg tajs acg,357,111,218,71,246,139,99,0.4762,0.3257,0.4024,0.3600
-wala npm_cg acg,357,111,218,71,246,139,99,0.4762,0.3257,0.4024,0.3600
+wala npm_cg tajs,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
+wala npm_cg tajs acg,357,111,219,72,246,138,99,0.4790,0.3288,0.4024,0.3619
+wala npm_cg acg,357,111,219,72,246,138,99,0.4790,0.3288,0.4024,0.3619
 wala tajs,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
-wala tajs acg,357,111,218,71,246,139,99,0.4762,0.3257,0.4024,0.3600
+wala tajs acg,357,111,219,72,246,138,99,0.4790,0.3288,0.4024,0.3619
 wala acg,357,111,219,72,246,138,99,0.4790,0.3288,0.4024,0.3619
 npm_cg,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000
 npm_cg tajs,357,111,357,111,246,0,0,0.3109,0.3109,0.0000,0.0000

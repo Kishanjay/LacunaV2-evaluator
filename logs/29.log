@@ -60,7 +60,7 @@ Run: 2
 [35msilly[39m: runOptions.analyzer OK
 [35msilly[39m: runOptions.olevel OK
 [34mdebug[39m: runOptions verified
-[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compiler.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/riotjs"}
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","dynamic"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsdynamic.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/riotjs"}
 [36mverbose[39m: Starting Lacuna
 [35msilly[39m: [18] node_modules/todomvc-common/base.js
 [35msilly[39m: [148] node_modules/riot/riot+compiler.min.js
@@ -73,6 +73,42 @@ Run: 2
 [35msilly[39m: Analyzer[nativecalls] aliveFunctions: 26
 [32minfo[39m: Analyzer[nativecalls] finished
 { static: true, nativecalls: true }
+[32minfo[39m: Analyzer[dynamic] localhost:8012
+[34mdebug[39m: Hosting: todomvc/examples.lacunized/riotjs/index.html
+[35msilly[39m: Analyzer[dynamic] aliveFunctions: 105
+[32minfo[39m: Analyzer[dynamic] finished
+{ static: true, nativecalls: true, dynamic: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/riotjs/lacuna_staticnativecallsdynamic.log
+
+
+Run: 3
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/riotjs
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","dynamic","closure_compiler"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsdynamicclosure_compiler.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/riotjs"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [18] node_modules/todomvc-common/base.js
+[35msilly[39m: [148] node_modules/riot/riot+compiler.min.js
+[35msilly[39m: [3] js/store.js
+[35msilly[39m: [1] js/app.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 231
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 26
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[32minfo[39m: Analyzer[dynamic] localhost:8012
+[34mdebug[39m: Hosting: todomvc/examples.lacunized/riotjs/index.html
+[35msilly[39m: Analyzer[dynamic] aliveFunctions: 105
+[32minfo[39m: Analyzer[dynamic] finished
+{ static: true, nativecalls: true, dynamic: true }
 SyntaxError: Unexpected end of JSON input
     at JSON.parse (<anonymous>)
     at closureCompilerToLacunaFormatter (/Users/kishannirghin/Desktop/Scriptie.nosync/LacunaV2/analyzers/closure_compiler.js:86:25)
@@ -80,6 +116,4 @@ SyntaxError: Unexpected end of JSON input
     at ChildProcess.exithandler (child_process.js:296:5)
     at ChildProcess.emit (events.js:182:13)
     at maybeClose (internal/child_process.js:962:16)
-    at Socket.stream.socket.on (internal/child_process.js:381:11)
-    at Socket.emit (events.js:182:13)
-    at Pipe._handle.close (net.js:611:12)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:251:5)

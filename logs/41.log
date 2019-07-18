@@ -68,7 +68,7 @@ Run: 2
 [35msilly[39m: runOptions.analyzer OK
 [35msilly[39m: runOptions.olevel OK
 [34mdebug[39m: runOptions verified
-[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","closure_compiler"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsclosure_compiler.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/vanillajs"}
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","dynamic"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsdynamic.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/vanillajs"}
 [36mverbose[39m: Starting Lacuna
 [35msilly[39m: [18] node_modules/todomvc-common/base.js
 [35msilly[39m: [7] js/helpers.js
@@ -85,6 +85,46 @@ Run: 2
 [35msilly[39m: Analyzer[nativecalls] aliveFunctions: 18
 [32minfo[39m: Analyzer[nativecalls] finished
 { static: true, nativecalls: true }
+[32minfo[39m: Analyzer[dynamic] localhost:8012
+[34mdebug[39m: Hosting: todomvc/examples.lacunized/vanillajs/index.html
+[35msilly[39m: Analyzer[dynamic] aliveFunctions: 50
+[32minfo[39m: Analyzer[dynamic] finished
+{ static: true, nativecalls: true, dynamic: true }
+[36mverbose[39m: CallGraph creation completed
+[32minfo[39m: Lacuna finished.
+See results in: todomvc/examples.lacunized/vanillajs/lacuna_staticnativecallsdynamic.log
+
+
+Run: 3
+[35msilly[39m: runOptions.directory OK
+[35msilly[39m: runOptions.entry OK
+[35msilly[39m: runOptions.destination OK
+[36mverbose[39m: Overwriting source todomvc/examples.lacunized/vanillajs
+[35msilly[39m: runOptions.analyzer OK
+[35msilly[39m: runOptions.olevel OK
+[34mdebug[39m: runOptions verified
+[34mdebug[39m: runOptions: {"analyzer":["static","nativecalls","dynamic","closure_compiler"],"entry":"index.html","destination":null,"logfile":"lacuna_staticnativecallsdynamicclosure_compiler.log","timeout":null,"olevel":0,"force":true,"normalizeOnly":false,"assumeNormalization":true,"directory":"todomvc/examples.lacunized/vanillajs"}
+[36mverbose[39m: Starting Lacuna
+[35msilly[39m: [18] node_modules/todomvc-common/base.js
+[35msilly[39m: [7] js/helpers.js
+[35msilly[39m: [11] js/store.js
+[35msilly[39m: [12] js/model.js
+[35msilly[39m: [7] js/template.js
+[35msilly[39m: [34] js/view.js
+[35msilly[39m: [39] js/controller.js
+[35msilly[39m: [3] js/app.js
+[35msilly[39m: [0] lacuna_cache/eventAttributes.js
+[35msilly[39m: Analyzer[static] aliveFunctions: 183
+[32minfo[39m: Analyzer[static] finished
+{ static: true }
+[35msilly[39m: Analyzer[nativecalls] aliveFunctions: 18
+[32minfo[39m: Analyzer[nativecalls] finished
+{ static: true, nativecalls: true }
+[32minfo[39m: Analyzer[dynamic] localhost:8012
+[34mdebug[39m: Hosting: todomvc/examples.lacunized/vanillajs/index.html
+[35msilly[39m: Analyzer[dynamic] aliveFunctions: 50
+[32minfo[39m: Analyzer[dynamic] finished
+{ static: true, nativecalls: true, dynamic: true }
 SyntaxError: Unexpected end of JSON input
     at JSON.parse (<anonymous>)
     at closureCompilerToLacunaFormatter (/Users/kishannirghin/Desktop/Scriptie.nosync/LacunaV2/analyzers/closure_compiler.js:86:25)

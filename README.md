@@ -27,12 +27,22 @@ no inline scripts, no externally hosted scripts.
 
 `node todomvc_lacuna_normalizer.js`
 
+Creates the examples.normalized
+
 ## Step 2. Acquire the Lacuna analyzer results
-`node todomvc_lacuna.js`
+Requires renaming of examples.normalized to examples.lacunized
 `todomvc_run.sh`
 
 
-## Step 3. Getting the ground truth values
+-- Note this doesn't work for now.
+`node todomvc_lacuna.js` 
+can create examples.lacunized should enable createDestinationFolder().
+
+## Step 3. Getting the ground truth values [OPTIONAL]
+Creates examples.lacunized.instrumented
+`node todomvc_instrumenter.js`
+
+_This step is optional as it only needs to be ran once_
 Fetch _all_functions.txt by running the instrumenter
 
 Get _alive_functions by running the following commands in the todomvc folder:
@@ -41,3 +51,17 @@ in test folder
 `npm run test`
 
 (May require you to rename the example.lacunized.instrumented to examples)
+
+
+## Step 4.
+Modify getStatistics.js to have the examples folders point to the good directory.
+A different directory can be chosen for the ground truth values and the Lacuna values.
+
+After an examples folder is there that contains all the log files, 
+all_functions, alive_functions, 
+
+Run `node getStatistics.js` which will create the logs and the statistics
+folder
+
+## Step 5. 
+When all stats are there, compute the averages with `node getAvgStatistics.js`
