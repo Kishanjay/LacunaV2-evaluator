@@ -32,7 +32,11 @@ Creates the examples.normalized
 ## Step 2. Acquire the Lacuna analyzer results
 Requires renaming of examples.normalized to examples.lacunized
 `todomvc_run.sh`
+This function runs very slow as it does every evaluation many more times than
+necessary.
 
+use `node todomvc_lacuna2.js` which only runs lacuna once for every analyzer 
+framework combination.
 
 -- Note this doesn't work for now.
 `node todomvc_lacuna.js` 

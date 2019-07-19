@@ -1,14 +1,14 @@
 /**
  * @author Kishan Nirghin
  * 
- * @version 2
- * 
  * @description Generates the statistics for every todomvc project
  * creates the files in the statistics folder. Which will contain specific 
  * statistics about each framework individually. 
  * 
  * Generates the statistics.csv file which contains the average performance
  * of each analyser combination
+ * 
+ * NOTE: requires a log file for every analyzer combination
  */
 require("./prototype_extension");
 
@@ -16,7 +16,7 @@ const fs = require("fs");
 const path = require("path");
 
 const TODOMVC_DIR = "todomvc";
-const EXAMPLES_DIR = "examples.lacunized"; /* With the lacunized logs */
+const EXAMPLES_DIR = "examples.lacunized.2"; /* With the lacunized logs */
 const EXAMPLES_DIR_GROUNDTRUTH = "examples.done"; /* With the ground truth values */
 const STATISTICS_FOLDER = "statistics";
 

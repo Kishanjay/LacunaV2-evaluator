@@ -1,0 +1,4 @@
+Analyzer,AllFunctions,DeadFunctions,PredictedDeadFunctions,TrueDeadFunctions(TP),AliveFunctions,PredictedAliveFunctions,TrueAliveFunctions,Accuracy,Precision,Recall,Fscore
+static,560,325,171,135,235,389,199,0.5964,0.7895,0.8468,0.8171
+static nativecalls,560,325,146,114,235,414,203,0.5661,0.7808,0.8638,0.8202
+static nativecalls dynamic,560,325,102,102,235,458,235,0.6018,1.0000,1.0000,1.0000

@@ -4,6 +4,9 @@
  * 
  * Assumes normalization
  * thus ensure to run todomvc_lacuna_normalizer beforehand
+ * 
+ * NOTE: this version is quite unefficient. It will run the same analyzers 
+ * multiple times on the same application. Therefore a new evaluator is made.
  */
 require("./prototype_extension");
 

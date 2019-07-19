@@ -77,6 +77,24 @@ async function lacunaNormalizeFrameworks(frameworks) {
             force: true
         };
 
+        /* Handle exceptions on the folder structure */
+        if (framework.name == 'angular-dart') {
+            normalizeRunOption.directory = normalizeRunOption.directory.slice(0, -4);
+            normalizeRunOption.entry = 'web/index.html';
+        }
+        if (framework.name == 'chaplin-brunch') {
+            normalizeRunOption.directory = normalizeRunOption.directory.slice(0, -7);
+            normalizeRunOption.entry = 'public/index.html';
+        }
+        if (framework.name == 'duel') {
+            normalizeRunOption.directory = normalizeRunOption.directory.slice(0, -4);
+            normalizeRunOption.entry = 'www/index.html';
+        }
+        if (framework.name == 'vanilladart') {
+            normalizeRunOption.directory = normalizeRunOption.directory.slice(0, -10);
+            normalizeRunOption.entry = 'build/web/index.html';
+        }
+
         try {
             await lacunaRunPromise(normalizeRunOption); // async doesn't seem to work
         } catch (e) { console.log(e); }
