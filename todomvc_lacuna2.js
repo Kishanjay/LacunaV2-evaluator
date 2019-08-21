@@ -17,16 +17,23 @@ const lacuna = require("../LacunaV2/lacuna_runner");
 
 const TODOMVC_DIR = "todomvc";
 const EXAMPLES_DIR = "examples.normalized.nocl";
-const EXAMPLES_OUTPUT_DIR = "examples.lacunized.2"; // different folder to keep things cleen
+const EXAMPLES_OUTPUT_DIR = "examples.lacunized.3"; // different folder to keep things cleen
 
 const ANALYZERS = ["static", "nativecalls", "dynamic", "closure_compiler", "wala", "npm_cg", "tajs", "acg"];
 
+const startTime = Date.now();
 
-// mergeLacunaResults();
-startLacuna().then((result) => {
-    console.log("Finished Lacunization");
-    mergeLacunaResults();
-});
+mergeLacunaResults();
+
+const endTime = Date.now();
+const dateDiff = endTime - startTime;
+console.log("Execution time: " + startTime + "-" + endTime + " = " + dateDiff);
+
+// startLacuna().then((result) => {
+//     console.log("Finished Lacunization");
+
+//     // mergeLacunaResults();
+// });
 
 function mergeLacunaResults() {
     let analyserCombinations = generateAnalyserCombinations(ANALYZERS);
@@ -35,6 +42,11 @@ function mergeLacunaResults() {
     let frameworks = getFrameworks();
 
     frameworks.forEach(framework => {
+        if (framework.name == 'angular-dart') return;
+        if (framework.name == 'chaplin-brunch') return;
+        if (framework.name == 'duel') return;
+        if (framework.name == 'vanilladart') return;
+
         /**
          * Gather all data needed from a framework directory;
          * thus creates also the object containg all analyzer data
@@ -54,7 +66,7 @@ function mergeLacunaResults() {
             analyzerCombination = analyzerCombination.split(" ");
             if (analyzerCombination.length == 1) { return; } // already have these
             const aliveFunctions = [];
-            
+
             analyzerCombination.forEach(analyzer => {
                 analyzerResult[analyzer]['aliveFunctions'].forEach(aliveFunction => {
                     /* Prevent duplicates from entering the array */
@@ -66,20 +78,20 @@ function mergeLacunaResults() {
                     if (match) return;
                     aliveFunctions.push(aliveFunction);
                 });
-                
+
             });
             const deadFunctions = getDeadFunctions(allFunctions, aliveFunctions);
-        
+
             const result = {
                 deadFunctions: deadFunctions,
                 aliveFunctions: aliveFunctions,
                 allFunctions: allFunctions,
             }
-            
+
             let resultLogfile = generateLogfileName(analyzerCombination);
-            writeJSONfile(path.join(directory,resultLogfile), result);
+            writeJSONfile(path.join(directory, resultLogfile), result);
         });
-        
+
     });
 }
 
@@ -104,14 +116,21 @@ async function startLacuna() {
 
     let lacunaRunOptions = generateLacunaRunOptions(frameworks, ANALYZERS);
     console.log("Number of runOptions: " + lacunaRunOptions.length);
-    
-    for (let i = 225; i < lacunaRunOptions.length; i++){
+
+    for (let i = 0; i < lacunaRunOptions.length; i++) {
         let lacunaRunOption = lacunaRunOptions[i];
 
         // skip certain analyzers for now.
-        // if (lacunaRunOption.analyzer.includes("dynamic")) { continue; }
-        // if (lacunaRunOption.analyzer.includes("wala")) { continue; }
-        
+        if (lacunaRunOption.analyzer.includes("static")) { continue; }
+        if (lacunaRunOption.analyzer.includes("nativecalls")) { continue; }
+        if (lacunaRunOption.analyzer.includes("dynamic")) { continue; }
+        if (lacunaRunOption.analyzer.includes("wala")) { continue; }
+        if (lacunaRunOption.analyzer.includes("acg")) { continue; }
+        if (lacunaRunOption.analyzer.includes("tajs")) { continue; }
+        if (lacunaRunOption.analyzer.includes("closure_compiler")) { continue; }
+        if (lacunaRunOption.analyzer.includes("npm_cg")) { continue; }
+
+
         try {
             console.log("\n\nRunOption: " + i + "/" + lacunaRunOptions.length);
             await runLacuna(lacunaRunOption); // remove await for async **shocker**
@@ -144,7 +163,7 @@ function getFrameworks() {
  */
 function generateAnalyserCombinations(analysers) {
     let result = [];
-    let f = function(prefix, items) {
+    let f = function (prefix, items) {
         for (let i = 0; i < items.length; i++) {
             let analyserCombination = (prefix + " " + items[i]).trim();
             result.push(analyserCombination);
@@ -166,8 +185,8 @@ function generateLacunaRunOptions(frameworks, analyzers) {
     frameworks.forEach(framework => {
         let directory = generateFrameworkDirectory(framework);
         analyzers.forEach((analyzer) => {
-            let logfile = generateLogfileName(analyzer); 
-            let lacunaRunOption = { 
+            let logfile = generateLogfileName(analyzer);
+            let lacunaRunOption = {
                 directory: directory,
                 analyzer: [analyzer],
                 logfile: logfile,
@@ -196,13 +215,13 @@ function runLacuna(runOption) {
 /**
  * Fetches the directory for a framework
  */
-function generateFrameworkDirectory({path: frameworkPath}) {
+function generateFrameworkDirectory({ path: frameworkPath }) {
     frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_OUTPUT_DIR); // replaces examples
     let pwdFrameworkPath = path.join(TODOMVC_DIR, frameworkPath);
     return pwdFrameworkPath;
 }
 
-function frameworkDirectoryException(framework, options){
+function frameworkDirectoryException(framework, options) {
     /* Handle exceptions on the folder structure */
     if (framework.name == 'angular-dart') {
         options.directory = options.directory.slice(0, -4);
@@ -265,5 +284,5 @@ function loadJSONFile(filepath) {
 }
 
 function writeJSONfile(filepath, obj) {
-    return fs.writeFileSync(path.join(__dirname, filepath),  JSON.stringify(obj, null, 4), 'utf8');
+    return fs.writeFileSync(path.join(__dirname, filepath), JSON.stringify(obj, null, 4), 'utf8');
 }

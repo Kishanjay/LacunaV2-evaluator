@@ -12,11 +12,14 @@
  */
 require("./prototype_extension");
 
+const startTime = Date.now();
+
+
 const fs = require("fs");
 const path = require("path");
 
 const TODOMVC_DIR = "todomvc";
-const EXAMPLES_DIR = "examples.lacunized.2"; /* With the lacunized logs */
+const EXAMPLES_DIR = "examples.lacunized.3"; /* With the lacunized logs */
 const EXAMPLES_DIR_GROUNDTRUTH = "examples.done"; /* With the ground truth values */
 const STATISTICS_FOLDER = "statistics";
 
@@ -30,7 +33,7 @@ var frameworks = frameworkPathLookup();
 process.chdir(cwd);
 
 /* The analyzers that have been used by Lacuna */
-const ANALYZERS = ["static", "nativecalls", "dynamic", "closure_compiler", "wala", "npm_cg", "tajs", "acg"]; //should be in the same order as the todomvc_lacuna script
+const ANALYZERS = ["static", "nativecalls", "dynamic", "closure_compiler", "npm_cg", "tajs", "acg"]; //should be in the same order as the todomvc_lacuna script (WALA is skipped)
 let analyserCombinations = generateAnalyserCombinations(ANALYZERS);
 
 /* Filenames should be inline with the instrumenter and instrumentation_server */
@@ -42,12 +45,16 @@ frameworks.forEach((framework) => {
     exportFrameworkStatistics(framework);
 });
 
+const endTime = Date.now();
+const dateDiff = endTime - startTime;
+console.log("Execution time: " + startTime + "-" + endTime + " = " + dateDiff);
+
 
 function exportFrameworkStatistics(framework) {
     let groundTruthDirectory = generateGroundTruthFrameworkDirectory(framework);
     let directory = generateFrameworkDirectory(framework);
     var aliveFunctionsPath = path.join(TODOMVC_DIR, EXAMPLES_DIR_GROUNDTRUTH, framework.name, ALIVE_FUNCTIONS_FILE); // stored somewhere else than the framework folder
-    var allFunctionsPath = path.join(groundTruthDirectory, ALL_FUNCTIONS_FILE); 
+    var allFunctionsPath = path.join(groundTruthDirectory, ALL_FUNCTIONS_FILE);
 
     try {
         var allFunctions = loadJSONFile(allFunctionsPath);
@@ -88,7 +95,17 @@ function exportFrameworkStatistics(framework) {
              *                                    = functions that were not detected by the analyzer but were alive
              * analyzerNumberOfTrueAliveFunctions = Detected alive functions that were alive
              */
-            var analyzerNumberOfTrueAliveFunctions = numberOfAliveFunctions - analyzerNumberOfFalseDeadFunctions;
+            var analyzerNumberOfTrueAliveFunctions = countTrueAliveFunctions(analyzerAliveFunctions, aliveFunctions);
+            /**
+             * WHY IS THIS WRONG? numberOfAliveFunctions - analyzerNumberOfFalseDeadFunctions;
+             * Analyzers can only pickup alive functions
+             * Therefore the number of falseDeadFunctions means that a analyzer claimed a function was dead: did not pick
+             * up on its alive status, where it was in practise alive. Thus it failed to register the function call as alive.
+             * 
+             * Thus the number of trueAliveFunctions are the functions that the analyzer did pick up on as being alive.
+             * And are actually alive. The logical conclusion is thus that all true alive functions + all false dead functions 
+             * == all alive functions. Since a function is either dead or alive.
+             */
 
             // confusion matrix code
             var tp = analyzerNumberOfTrueDeadFunctions;
@@ -98,10 +115,20 @@ function exportFrameworkStatistics(framework) {
 
             var accuracy = (tn + tp) / (analyzerAllFunctions.length);
             var precision = tp / analyzerDeadFunctions.length;
-            var recall = analyzerNumberOfTrueAliveFunctions / numberOfAliveFunctions;
+            // var recall = analyzerNumberOfTrueAliveFunctions / numberOfAliveFunctions;
+            var recall = tp / (tp + fn);
+
+            if (fn < 0 || recall > 1) {
+                console.log("True alive [according to analyzer]", analyzerNumberOfTrueAliveFunctions);
+                console.log("Alive functions [according to analyzer]", analyzerAliveFunctions.length);
+                console.log("false negatives", fn);
+                console.log("Recall = ", tp, '/', tp + fn);
+            }
+
+
             var fscore = 2 * ((precision * recall) / (precision + recall));
 
-            var significance = 4;
+            var significance = 20;
             accuracy = accuracy.toFixed(significance);
             precision = precision.toFixed(significance);
             recall = recall.toFixed(significance);
@@ -137,6 +164,26 @@ function countTrueDeadFunctions(claimedDeadFunctions, aliveFunctions) {
         });
 
         if (match) counter--; // for every alive deadfunction substract.
+    });
+
+    return counter;
+}
+
+
+/**
+ * The normalize function should be removed.
+ */
+function countTrueAliveFunctions(claimedAliveFunctions, aliveFunctions) {
+    var counter = claimedAliveFunctions.length;
+    claimedAliveFunctions.forEach((claimedAliveFunction) => {
+
+        var match = aliveFunctions.some((aliveFunction) => {
+            return path.normalize(aliveFunction.file) == path.normalize(claimedAliveFunction.file) &&
+                aliveFunction.range[0] == claimedAliveFunction.range[0] &&
+                aliveFunction.range[1] == claimedAliveFunction.range[1];
+        });
+
+        if (!match) counter--; // for every alive deadfunction substract.
     });
 
     return counter;
@@ -179,7 +226,7 @@ function instrumenterFixFile(funcs, framework) {
  */
 function generateAnalyserCombinations(analysers) {
     let result = [];
-    let f = function(prefix, items) {
+    let f = function (prefix, items) {
         for (let i = 0; i < items.length; i++) {
             let analyserCombination = (prefix + " " + items[i]).trim();
             result.push(analyserCombination);
@@ -191,13 +238,13 @@ function generateAnalyserCombinations(analysers) {
 }
 
 
-function generateFrameworkDirectory({path: frameworkPath}) {
+function generateFrameworkDirectory({ path: frameworkPath }) {
     frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_DIR); // append to examples    
     let pwdFrameworkPath = path.join(TODOMVC_DIR, frameworkPath);
     return pwdFrameworkPath;
 }
 
-function generateGroundTruthFrameworkDirectory({path: frameworkPath}) {
+function generateGroundTruthFrameworkDirectory({ path: frameworkPath }) {
     frameworkPath = frameworkPath.splice(0, 8, EXAMPLES_DIR_GROUNDTRUTH); // append to examples    
     let pwdFrameworkPath = path.join(TODOMVC_DIR, frameworkPath);
     return pwdFrameworkPath;

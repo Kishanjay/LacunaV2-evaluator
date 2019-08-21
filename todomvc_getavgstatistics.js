@@ -8,6 +8,7 @@
  */
 require("./prototype_extension");
 
+const startTime = Date.now();
 const fs = require("fs");
 const path = require("path");
 const csv = require("fast-csv");
@@ -24,7 +25,7 @@ function parseStatistics() {
 
             var csv_file = fs.readFileSync(path.join(STATISTICS_FOLDER, file));
             var lines = csv_file.toString().split('\n');
-            
+
             // skip first line
             lines.shift();
             lines.forEach((line) => {
@@ -32,7 +33,7 @@ function parseStatistics() {
                 if (!lineData) { return; }
                 var key = lineData[0].replace(/ /g, "+");
                 if (!key) { return; }
-                
+
                 var accuracy = lineData[8];
                 var precision = lineData[9];
                 var recall = lineData[10];
@@ -51,24 +52,29 @@ function parseStatistics() {
                 results[key].recall.push(recall);
                 results[key].fscore.push(fscore);
             });
-            
+
         });
         generateAverages(results);
     });
 }
-   
+
 function generateAverages(results) {
     var csvData = "Analyzer,Accuracy,Precision,Recall,Fscore\n";
     for (var analyzer in results) {
         if (!results.hasOwnProperty(analyzer)) { continue; }
         var analyzerData = results[analyzer];
-        var avgAccuracy = calculateAverage(analyzerData.accuracy).toFixed(2);
-        var avgPrecision = calculateAverage(analyzerData.precision).toFixed(2);
-        var avgRecall = calculateAverage(analyzerData.recall).toFixed(2);
-        var avgFscore = calculateAverage(analyzerData.fscore).toFixed(2);
+        var avgAccuracy = calculateAverage(analyzerData.accuracy).toFixed(3);
+        var avgPrecision = calculateAverage(analyzerData.precision).toFixed(3);
+        var avgRecall = calculateAverage(analyzerData.recall).toFixed(3);
+        var avgFscore = calculateAverage(analyzerData.fscore).toFixed(3);
         csvData += `${analyzer},${avgAccuracy},${avgPrecision},${avgRecall},${avgFscore}\n`;
     }
     fs.writeFileSync(path.join(__dirname, STATISTICS_FOLDER, STATISTICS_OUTPUT), csvData, 'utf8');
+
+    const endTime = Date.now();
+    const dateDiff = endTime - startTime;
+    console.log("Execution time: " + startTime + "-" + endTime + " = " + dateDiff);
+
 }
 
 function calculateAverage(arr) {
@@ -76,7 +82,7 @@ function calculateAverage(arr) {
     return sum(arr) / arr.length;
 }
 
-function sum(arr) { 
+function sum(arr) {
     var sum = 0;
     arr.forEach((item) => {
         sum += parseFloat(item);

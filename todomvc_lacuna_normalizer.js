@@ -10,7 +10,7 @@ const lacuna = require("../LacunaV2/lacuna_runner");
 
 const TODOMVC_DIR = "todomvc";
 const EXAMPLES_DIR = "examples";
-const EXAMPLES_OUTPUT_DIR = "examples.normalized";
+const EXAMPLES_OUTPUT_DIR = "examples.normalized.new";
 
 
 start().then((result) => {
